@@ -94,8 +94,19 @@ export default function Profile(props) {
     setProfile({ ...profile, avatar: randomAvatar });
   }
 
+  const firebaseConfig = {
+    apiKey: "AIzaSyDio8nyzeQ0_9Iw4u-WLXHDONwMSdkIE3U",
+    authDomain: "faces-43300.firebaseapp.com",
+    databaseURL: "https://faces-43300-default-rtdb.firebaseio.com",
+    projectId: "faces-43300",
+    storageBucket: "faces-43300.appspot.com",
+    messagingSenderId: "806406930381",
+    appId: "1:806406930381:web:c1ff0faaddf4befa97ce84",
+    measurementId: "G-K9C7QVRNRQ"
+  };
+
   if (!firebase.apps.length) {
-    firebase.initializeApp(JSON.parse(process.env.NEXT_PUBLIC_FIREBASE));
+    firebase.initializeApp(firebaseConfig);
   } else {
     firebase.app();
   }
@@ -150,7 +161,7 @@ export default function Profile(props) {
                 token: JSON.parse(localStorage.getItem("eta_user")).token,
               },
             });
-          });
+            }).catch((e)=>console.log(e));
       })
       .catch((stuff) => {
         toast({
@@ -173,7 +184,7 @@ export default function Profile(props) {
         Authorization:
           "Token " + JSON.parse(localStorage.getItem("eta_user")).token,
       },
-    }).catch(console.log);
+    }).catch((e)=>console.log(e));
     await axios({
       url: `${API_BASE_URL}/u/update/`,
       method: "POST",

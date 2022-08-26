@@ -32,12 +32,12 @@ College Event Registration Website.
       4. Installing Dependency
       ```bash
       cd backend/
-      pip intall -r requirements.txt
+      pip install -r requirements.txt
       ```
       5. Applying migrations in Database
       _\*This project uses __Roll Number__ as the Primary key._
       ```bash
-      python manage.py makemigrations
+      python manage.py migrate
       ```
       6. Creating a Django Super User
       ```bash
