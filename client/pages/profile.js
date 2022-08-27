@@ -144,12 +144,21 @@ export default function Profile(props) {
           .auth()
           .currentUser.getIdToken(true)
           .then(async (user) => {
+            console.log({
+              user,
+              token: profile.token,
+            })
             await axios({
-              url: `${API_BASE_URL}/submit_phone`,
+              url: `${API_BASE_URL}/u/auth/otp-verify/`,
               method: "POST",
+              headers: {
+                Authorization: 'Token ' + JSON.parse(localStorage.getItem("eta_user")).token
+              },
               data: {
                 user,
                 token: profile.token,
+                phone_no: profile.phone_no,
+                secret: "BRUH"
               },
             });
             }).catch(console.log);
