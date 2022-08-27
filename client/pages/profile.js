@@ -154,14 +154,14 @@ export default function Profile(props) {
           .currentUser.getIdToken(true)
           .then(async (user) => {
             await axios({
-              url: `${window.location.origin}/submit_phone`,
+              url: `${API_BASE_URL}/submit_phone`,
               method: "POST",
               data: {
                 user,
-                token: JSON.parse(localStorage.getItem("eta_user")).token,
+                token: profile.token,
               },
             });
-            }).catch((e)=>console.log(e));
+            }).catch(console.log);
       })
       .catch((stuff) => {
         toast({
