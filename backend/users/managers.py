@@ -7,6 +7,23 @@ class UserManager(BaseUserManager):
     Custom user model manager where email is the unique identifiers
     for authentication instead of usernames.
   """
+  def create_user_bulk(self,name,roll_no, email,semester,department, password, **extra_fields):
+      """
+      Create and save a User with the given email and password.
+      """
+      if not roll_no:
+        raise ValueError('The Roll Number must be set')
+
+      if not email:
+        raise ValueError('The Email must be set')
+
+      email = self.normalize_email(email)
+      
+      user = self.model(roll_no=roll_no,name = name, email=email,semester= semester,department= department, **extra_fields)
+      user.set_password(password)
+      user.save()
+      return user
+
   def create_user(self, roll_no, email, password, **extra_fields):
       """
       Create and save a User with the given email and password.
@@ -23,18 +40,63 @@ class UserManager(BaseUserManager):
       user.set_password(password)
       user.save()
       return user
+  def create_users(self):
+    """
+    Create and save a SuperUser with the given email and password.
+    """
+    # extra_fields.setdefault('is_staff', False)
+    # extra_fields.setdefault('is_superuser', False)
+    # extra_fields.setdefault('is_active', True)
+
+    # if extra_fields.get('is_staff') is not True:
+    #     raise ValueError(_('Superuser must have is_staff=True.'))
+    # if extra_fields.get('is_superuser') is not True:
+    #     raise ValueError(_('Superuser must have is_superuser=True.'))
+    import csv
+    with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
+      spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+      for row in spamreader:
+          # print(row)
+          # print(', '.join(row))
+          
+          [name, roll_no, email, semester, department,password] = row
+          # roll_no = float(roll_no)
+          print(type(roll_no))
+          print(roll_no)
+          roll_no = roll_no.replace(',','')
+          print(roll_no)
+          self.create_user(name,int(roll_no), email,semester,department, password)
+          
+    return self.create_user(name,int(roll_no), email,semester,department, password)
 
   def create_superuser(self,roll_no, email, password, **extra_fields):
     """
     Create and save a SuperUser with the given email and password.
     """
-    extra_fields.setdefault('is_staff', True)
-    extra_fields.setdefault('is_superuser', True)
+    extra_fields.setdefault('is_staff', False)
+    extra_fields.setdefault('is_superuser', False)
     extra_fields.setdefault('is_active', True)
 
-    if extra_fields.get('is_staff') is not True:
-        raise ValueError(_('Superuser must have is_staff=True.'))
-    if extra_fields.get('is_superuser') is not True:
-        raise ValueError(_('Superuser must have is_superuser=True.'))
+    # if extra_fields.get('is_staff') is not True:
+    #     raise ValueError(_('Superuser must have is_staff=True.'))
+    # if extra_fields.get('is_superuser') is not True:
+    #     raise ValueError(_('Superuser must have is_superuser=True.'))
+    import csv
+    with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
+      spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+      for row in spamreader:
+          # print(row)
+          # print(', '.join(row))
+          
+          [name, roll_no, email, semester, department,password] = row
+          roll_no = roll_no.replace(',','')
+          semester = semester.replace(',','')
+          password = password.replace(',','')
+          department = department.replace(',','')
+          email = email.replace(',','')
+          name = name.replace(',','')
+          # if you want to createsuperuser create_user(....)and add true to superuser and staff and comment above code.
+          self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
+      # create_users()    
+    return self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
 
-    return self.create_user(roll_no, email, password, **extra_fields)
