@@ -257,52 +257,16 @@ class UserCartUpdate(APIView):
     except ValueError:
       return JsonResponse({"detail": "Something went Wrong", "success": False}, status=400)
 
-# from django.views.decorators.csrf import csrf_exempt 
-import csv
+
 class MakeUsersView(APIView):
   """
     This route populates the DB with users
   """
-  # permission_classes = [IsAdminUser]
-  # @csrf_exempt
-  print('print 1')
-  # url = f'https://docs.google.com/spreadsheets/d/1jfoA0Yj6-e9Y2TCEzJV9ZG37Q5ZyeN7o6D1IqivrcOE/edit?usp=sharing'
-    # print(url)
-  import csv
-  with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
-      spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
-      for row in spamreader:
-          # print(row)
-          # print(', '.join(row))
-          
-          [name, roll_no, email, semester, department,text_password] = row
-          # roll_no = float(roll_no)
+  permission_classes = [IsAdminUser]
 
-          user = User()
-          user.name = name
-          # user.roll_no = roll_no
-          user.email = email
-          user.department = department
-          user.semester = semester
-          user.set_password(text_password)
-          user.roll_no = 100
-          # if roll_no >= 9000000:
-          #   user.has_filled_profile = True
-          #   user.is_phone_no_verified = True
-
-          try:
-            print('yes')
-            user.save()
-            # can send email for login details here
-            # but sending throught mail merge in google sheeets
-          except:
-            print('nhi')
-            print(roll_no, email, text_password, department, semester)
   def post(self, request):
     _id = request.data["id"]
-
-    print('yess')
-    url = f'https://docs.google.com/spreadsheets/d/1jfoA0Yj6-e9Y2TCEzJV9ZG37Q5ZyeN7o6D1IqivrcOE/edit?usp=sharing'
+    url = f'https://drive.google.com/u/0/uc?id={_id}&export=download'
 
     with requests.Session() as s:
       download = s.get(url)
