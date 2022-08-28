@@ -243,7 +243,7 @@ export default function Events(props) {
                   borderColor: "pink.500",
                 }}
               >
-                <option value="T">Technical</option>
+                {/* <option value="T">Technical</option> */}
                 <option value="C">Cultural</option>
                 <option value="S">Sports</option>
               </Select>
