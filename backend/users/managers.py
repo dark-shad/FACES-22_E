@@ -54,10 +54,17 @@ class UserManager(BaseUserManager):
     # if extra_fields.get('is_superuser') is not True:
     #     raise ValueError(_('Superuser must have is_superuser=True.'))
     import csv
-    with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
+    with open(r'C:\Users\prati\FACES-22_E-2\backend\users\data.csv', newline='') as csvfile:
       spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
       for row in spamreader:          
-          [name, roll_no, email, semester, department,password] = row
+          
+          # AD, 5, 5@gmail.com, Comp, 5, 13pCqSnayL,
+          # row.pop()
+          #print(row)
+          row.pop(5)
+          print(row)
+          [name, roll_no, email, department, semester,password] = row
+          # roll_no=
           roll_no = roll_no.replace(',','')
           semester = semester.replace(',','')
           password = password.replace(',','')
