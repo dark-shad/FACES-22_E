@@ -47,14 +47,14 @@ export default function Login(props) {
               >
                 Login
               </Tab>
-              <Tab
+              {/* <Tab
                 _selected={{ color: "white", bg: "#fcc0cb" }}
                 fontSize={"xl"}
                 color="pink.400"
                 _focus={{ outline: "none!important" }}
               >
                 Register
-              </Tab>
+              </Tab> */}
             </TabList>
             <TabPanels>
               <TabPanel>

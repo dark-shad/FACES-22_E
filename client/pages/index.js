@@ -119,14 +119,14 @@ export default function Home(props) {
               >
                 {!over ? `${daysLeft} days left` : "On now!"}
               </Text> */}
-              <Text
+              {/* <Text
                 mt={3}
                 color={"pink.400"}
                 fontWeight={"800"}
                 fontSize={"5xl"}
               >
                 Registrations closed!
-              </Text>
+              </Text> */}
             </Box>
           </Center>
         </Flex>
