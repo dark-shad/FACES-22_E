@@ -102,7 +102,8 @@ def make_user_when_approved(sender, instance, created, **kwargs):
         has_filled_profile=True,
         is_from_fcrit=False,
       )
-      user.set_password(pwd)
+      print(user.set_password(pwd))
+      print(user)
       
       # SEND EMAIL HERE
       send_mail(

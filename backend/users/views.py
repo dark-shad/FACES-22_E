@@ -105,10 +105,12 @@ class LoginView(ObtainAuthToken):
 
   def post(self, request, *args, **kwargs):
     serializer = self.serializer_class(data=request.data, context={'request': request})
+    print(serializer)
     if serializer.is_valid():
       user = serializer.validated_data['user']
       user_serializer = UserSerializer(user)
       token, created = Token.objects.get_or_create(user=user)
+      print(f"{user}\n{user_serializer}\n{token,created}")
       return JsonResponse({
         'token': token.key,
         'user': user_serializer.data,

@@ -60,9 +60,9 @@ class UserManager(BaseUserManager):
           
           # AD, 5, 5@gmail.com, Comp, 5, 13pCqSnayL,
           # row.pop()
-          #print(row)
-          row.pop(5)
           print(row)
+          # row.pop(5)
+          # print(row)
           [name, roll_no, email, department, semester,password] = row
           # roll_no=
           roll_no = roll_no.replace(',','')

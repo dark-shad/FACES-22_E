@@ -1,0 +1,16 @@
+[
+    {
+        "model": "users.User",
+        "pk":10,
+        "fields":{
+            "name": "Paul",
+            "roll_no":1020222,
+            "email":"102@gmail.com",
+            "department":"COMPS",
+            "semester":5,
+            "phone_no":1111122222,
+            "password":"1"
+            
+        }
+    }
+]
