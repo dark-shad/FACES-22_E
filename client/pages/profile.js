@@ -337,8 +337,10 @@ export default function Profile(props) {
                     <FormLabel>Semester</FormLabel>
                     <Select
                       placeholder="Select Semester"
+                      // readOnly or disabled -> which one to choose ?
                       readOnly
                       value={profile.semester}
+                      
                     >
                       {[1, 2, 3, 4, 6, 7, 8].map((sem) => (
                         <option key={sem} value={sem}>
