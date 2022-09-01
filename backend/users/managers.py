@@ -54,8 +54,10 @@ class UserManager(BaseUserManager):
     # if extra_fields.get('is_superuser') is not True:
     #     raise ValueError(_('Superuser must have is_superuser=True.'))
     import csv
+
     with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+
       for row in spamreader:          
           
           # AD, 5, 5@gmail.com, Comp, 5, 13pCqSnayL,
