@@ -1,6 +1,6 @@
-# ETAMAX 2022
+# Faces 2022
 College Event Registration Website.
-(used for Etamax-2022)
+(used for Faces-2022)
 
 ### Structure
 | Folder | Description |
