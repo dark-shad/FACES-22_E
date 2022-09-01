@@ -66,13 +66,18 @@ class UserManager(BaseUserManager):
           [name, roll_no, email, department, semester,password] = row
           # roll_no=
           roll_no = roll_no.replace(',','')
+          roll_no = roll_no.replace(' ','')
           semester = semester.replace(',','')
+          semester = semester.replace(' ','')
           password = password.replace(',','')
+          password = password.replace(' ','')
           department = department.replace(',','')
+          department = department.replace(' ','')
           email = email.replace(',','')
+          email = email.replace(' ','')
           name = name.replace(',','')
+          print(password)
           # if you want to createsuperuser create_user(....) instead of create_user_bulk(...) and add true to superuser and staff and comment above code. 56-66 line
           self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
       # create_users()    
     return self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
-
