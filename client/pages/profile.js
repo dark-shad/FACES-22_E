@@ -96,7 +96,7 @@ export default function Profile(props) {
 
   
   if (!firebase.apps.length) {
-    console.log(process.env.NEXT_PUBLIC_FIREBASE)
+    // console.log(process.env.NEXT_PUBLIC_FIREBASE)
     firebase.initializeApp(JSON.parse(process.env.NEXT_PUBLIC_FIREBASE));
   } else {
     firebase.app();
@@ -214,9 +214,15 @@ export default function Profile(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22 | Profile</title>
+        <title>FACES-22 | Profile</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
+      <style jsx>{`
+        div {
+          margin-top: 4rem;
+        }
+        
+      `}</style>
       <Layout scrollYVar={80}>
         <Background pageName={"Home"} />
         <Center
@@ -228,15 +234,17 @@ export default function Profile(props) {
           w={"100vw"}
           flexDir={"column"}
         >
-          <Center bg="transparent" h={{ base: "13vh", md: "15vh" }} />
+          <div className="profileEditDiv" >
+          <Center bg="transparent" h={{ base: "13vh", md: "15vh" }}/>
           <Stack align={"center"}>
             <Heading fontSize={"4xl"} textAlign={"center"} color="pink.500">
-              Edit Profile
+              Profile
             </Heading>
-            <Text fontSize={"2xl"} color={"pink.500"}>
+            {/* <Text fontSize={"2xl"} color={"pink.500"}>
               to participate in all events ✌️
-            </Text>
+            </Text> */}
           </Stack>
+          </div>
           <Center
             w={{ base: "97%", lg: "90%" }}
             h={{ base: "95%", lg: "90%" }}
@@ -323,24 +331,19 @@ export default function Profile(props) {
                   <FormControl id="password" isRequired>
                     <FormLabel>Department</FormLabel>
                     <Flex wrap="wrap">
-                      {departments.map((value) => {
-                        const radio = getRadioProps({ value });
-                        return (
-                          <RadioCard key={value} {...radio}>
-                            {value}
-                          </RadioCard>
-                        );
-                      })}
+                        <Button colorScheme='blue'>{profile.department}</Button>
                     </Flex>
                   </FormControl>
                   <FormControl id="password" isRequired>
                     <FormLabel>Semester</FormLabel>
                     <Select
                       placeholder="Select Semester"
+                      // readOnly or disabled -> which one to choose ?
                       readOnly
                       value={profile.semester}
+                      
                     >
-                      {[1, 2, 3, 4, 6, 7, 8].map((sem) => (
+                      {[1, 3, 5, 7].map((sem) => (
                         <option key={sem} value={sem}>
                           Semester {sem}
                         </option>

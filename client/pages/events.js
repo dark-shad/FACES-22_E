@@ -179,8 +179,8 @@ export default function Events(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22 | Events</title>
-        <meta name="ETAMAX-22" content="Events" />
+        <title>FACES-22 | Events</title>
+        <meta name="FACES-22" content="Events" />
         <meta
           name="description"
           content="Here is the list of events for this year"
@@ -208,9 +208,9 @@ export default function Events(props) {
             >
               <Box w="80%">
                 <Heading color="pink.300" fontSize="6xl">
-                  ETAMAX-22{" "}
+                  FACES-22{" "}
                   <Text fontSize="8xl" fontFamily="Birthstone Bounce">
-                    Fleur
+                    Udaan
                   </Text>
                 </Heading>
               </Box>
@@ -220,10 +220,10 @@ export default function Events(props) {
                   fontWeight={"normal"}
                   color="pink.400"
                 >
-                  ETAMAX offers you a variety of events to choose from. Feel
-                  free to pick any event of your choice from Technical, Cultural
-                  and Sports (Only for FCRIT students), but make sure you follow
-                  the registration criteria.
+                  FACES offers you a variety of events to choose from. Feel free
+                  to pick any event of your choice from Cultural and
+                  Sports (Only for FCRIT students), but make sure you follow the
+                  registration criteria.
                 </Text>
               </Box>
             </Center>

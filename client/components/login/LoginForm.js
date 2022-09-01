@@ -106,6 +106,7 @@ const LoginForm = () => {
     })
       .then((res) => res.json())
       .then((res) => {
+        console.log(res)
         ga.event({
           action: "Login",
           params: {
