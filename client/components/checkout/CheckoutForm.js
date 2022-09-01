@@ -116,7 +116,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
     if (user.user.is_from_fcrit && (c["C"] < 1 || c["T"] < 1)) {
       toast({
         title:
-          "Criteria Not Satisfied: Atleast 1 Cultural and 1 Technical Event",
+          "Criteria Not Satisfied: Atleast 2 Cultural Event",
         status: "error",
         duration: 3000,
         position: "top-right",
