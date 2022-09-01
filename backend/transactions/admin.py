@@ -4,6 +4,9 @@ from django import forms
 
 from .models import Transaction
 from users.models import Participation
+from django.http.response import HttpResponse
+from django.template.defaultfilters import slugify
+import csv
 
 
 class TransactionForm(forms.ModelForm):
@@ -50,10 +53,33 @@ class DateFilterList(admin.SimpleListFilter):
       return queryset.filter(timestamp__gte=f"{yesterday.year}-{yesterday.month}-{yesterday.day}", timestamp__lt=f"{today.year}-{today.month}-{today.day}")
     if self.value() == 'D2':
       return queryset.filter(timestamp__gte=f"{day_before_yesterday.year}-{day_before_yesterday.month}-{day_before_yesterday.day}", timestamp__lt=f"{yesterday.year}-{yesterday.month}-{yesterday.day}")
-@admin.register(Transaction)
-class TransactionAdmin(admin.ModelAdmin):
-  form = TransactionForm
-  search_fields = ['transaction_id', 'upi_transaction_id', 'user__roll_no']
-  list_display = ['transaction_id', 'upi_transaction_id', 'timestamp', 'is_verified',  'event_amount', 'donation_amount', 'total_amount', 'is_paid',]
-  list_filter = ['is_verified', 'is_paid', DateFilterList]
+
+@admin.action(description="Download Csv")
+def export_as_csv(self, request, queryset):
+    model = queryset.model
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename=%s.csv' % slugify(model.__name__)
+    writer = csv.writer(response)
+    fields= None
+    # Write headers to CSV file
+    if fields:
+        headers = fields
+    else:
+        headers = []
+        for field in model._meta.fields:
+            headers.append(field.name)
+    writer.writerow(headers)
+    # Write data to CSV file
+    for obj in queryset:
+      row = []
+      for field in headers:
+          if field in headers:
+              val = getattr(obj, field)
+              if callable(val):
+                  val = val()
+              row.append(val)
+
+      writer.writerow(row)
+    # Return CSV file to browser as download
+    return response
   # ordering = ['-timestamp']
