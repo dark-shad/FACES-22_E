@@ -55,7 +55,7 @@ class UserManager(BaseUserManager):
     #     raise ValueError(_('Superuser must have is_superuser=True.'))
     import csv
 
-    with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
+    with open(r'/home/ubuntu/Projects/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
 
       for row in spamreader:          
