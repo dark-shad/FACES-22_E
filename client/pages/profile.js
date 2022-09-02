@@ -190,10 +190,11 @@ export default function Profile(props) {
       method: "POST",
       data: {
         name: profile.fname + " " + profile.lname,
+        phone_no: profile.phone_no
       },
       headers: {
         Authorization:
-          "Token " + JSON.parse(localStorage.getItem("eta_user")).token,
+        "Token " + JSON.parse(localStorage.getItem("eta_user")).token,
       },
     });
     toast({
@@ -359,16 +360,17 @@ export default function Profile(props) {
                       <Input
                         name="phone"
                         defaultValue={
-                          profile.phone_no && profile.phone_no.substring(3)
+                          profile.phone_no && profile.phone_no
                         }
                         id="phone"
                         readOnly={!editPhone}
                         maxLength={10}
-                        onChange={(e) =>
+                        onChange={(e) =>{
+                          console.log(`phone: ${e.target.value}`)
                           setProfile({
                             ...profile,
                             phone_no: "+91" + e.target.value,
-                          })
+                          })}
                         }
                       />
                       <InputRightElement>
@@ -381,34 +383,9 @@ export default function Profile(props) {
                         )}
                       </InputRightElement>
                     </InputGroup>
-                    {editPhone && (
-                      <Button bg="pink.400" onClick={login} m={2} color="white">
-                        Verify OTP
-                      </Button>
-                    )}
-                    <Flex
-                      id="recaptcha-container"
-                      pl={3}
-                      display={OTPSent && "none"}
-                    />
+                    {editPhone}
                   </FormControl>
-                  {!phoneSet && OTPSent && (
-                    <FormControl m={1}>
-                      <FormLabel>OTP</FormLabel>
-                      <Input
-                        id="otp"
-                        onChange={(e) => setOTP(e.target.value)}
-                      />
-                      <Button
-                        onClick={verifyOTP}
-                        bg={"pink.400"}
-                        m={3}
-                        color="white"
-                      >
-                        Submit OTP
-                      </Button>
-                    </FormControl>
-                  )}
+
                   <Stack spacing={10} pt={2}>
                     <Button
                       loadingText="Submitting"

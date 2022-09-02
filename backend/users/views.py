@@ -68,6 +68,8 @@ class UserUpdate(APIView):
     DEPARTMENTS = ("COMP", "IT", "EXTC", "MECH", "ELEC", "OTHER")
     
     name = request.data['name']
+    phone_no = request.data['phone_no']
+    print(request.data)
     # department = request.data['department']
     # semester = request.data['semester']
 
@@ -78,6 +80,7 @@ class UserUpdate(APIView):
       return JsonResponse({"detail": "Invalid Fields", "success": False}, status=400)
 
     user.name = name
+    user.phone_no = phone_no
     # user.department = department
     # user.semester = semester
     
