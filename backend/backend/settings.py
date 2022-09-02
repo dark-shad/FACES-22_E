@@ -24,6 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nc8%5lucm--y429wjc*gm2=wxg(r!tao**j4%sx@r8n=t6g*qz'
 
 OTP_VERIFY_SECRET = os.getenv("OTP_VERIFY_SECRET", "BRUH")
+# OTP_SECRET="0879f1a7575cb723141c8f6bb6e25d1dc64e0c56"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.getenv('DJANGO_DEBUG') == 'False' else True 
@@ -235,4 +236,4 @@ MARTOR_MARKDOWN_EXTENSION_CONFIGS = {}
 MARTOR_UPLOAD_URL = '/martor/uploader/' # default
 MARTOR_SEARCH_USERS_URL = '/martor/search-user/' # default
 
-MARTOR_MARKDOWN_BASE_MENTION_URL = 'http://127.0.0.1:8000/' # please change this to your domain
+MARTOR_MARKDOWN_BASE_MENTION_URL = 'http://43.205.180.118:8000/' # please change this to your domain

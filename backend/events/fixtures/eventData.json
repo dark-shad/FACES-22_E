@@ -1,0 +1,44 @@
+[
+    {
+        "model":  "events.Event",
+        "fields":{"title":  "Event 1",
+        "day":  1,
+        "description":  "Event 1",
+        "start":  "06:00:00.000000",
+        "end":  "07:00:00.000000",
+        "max_seats":  "10",
+        "category":  "C",
+        "entry_fee":  "1",
+        "prize_money":  "11",
+        "team_size":  "1",
+        "is_team_size_strict":"False"
+    }},
+    {
+        "model":  "events.Event",
+        "fields":{"title":  "Event 2",
+        "day":  2,
+        "description":  "Event 2",
+        "start":  "08:00:00.000000",
+        "end":  "09:00:00.000000",
+        "max_seats":  "10",
+        "category":  "S",
+        "entry_fee":  "2",
+        "prize_money":  "32",
+        "team_size":  "1",
+        "is_team_size_strict":"False"
+    }},
+    {
+        "model":  "events.Event",
+        "fields":{"title":  "Event 3",
+        "day":  2,
+        "description":  "Event 3",
+        "start":  "08:00:00.000000",
+        "end":  "09:00:00.000000",
+        "max_seats":  "10",
+        "category":  "S",
+        "entry_fee":  "2",
+        "prize_money":  "32",
+        "team_size":  "1",
+        "is_team_size_strict":"False"
+    }}
+]

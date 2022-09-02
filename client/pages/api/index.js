@@ -3,6 +3,9 @@ const axios = require("axios");
 const { API_BASE_URL } = require("../../config");
 
 export default function handler(req, res) {
+  console.log(process.env.FIREBASE_ADMIN)
+  console.log(process.env.NEXT_PUBLIC_FIREBASE)
+  console.log(process.env.FIREBASE_URL)
   if (req.method == "POST") {
     if (!admin.apps.length) {
       admin.initializeApp({
