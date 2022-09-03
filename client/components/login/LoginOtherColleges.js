@@ -210,19 +210,19 @@ const LoginOtherColleges = () => {
       minH={"90vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("pink.100", "pink.800")}
+      bg={useColorModeValue("purple.100", "purple.800")}
       borderRadius={"10px"}
       flexDir={"column"}
     >
       <Stack w="100%" spacing={6} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading fontSize={"2xl"} color="pink.600" textAlign={"center"}>
+          <Heading fontSize={"2xl"} color="purple.600" textAlign={"center"}>
             *Only for Non-FCRIT Students
           </Heading>
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("pink.50", "gray.700")}
+          bg={useColorModeValue("purple.50", "gray.700")}
           boxShadow={"lg"}
           p={8}
         >
@@ -238,11 +238,11 @@ const LoginOtherColleges = () => {
                   placeholder="Enter your full name here"
                   _focus={{
                     outline: "none",
-                    borderColor: "pink.400",
+                    borderColor: "purple.400",
                     borderWidth: "2px",
                   }}
                   _hover={{
-                    borderColor: "pink.300",
+                    borderColor: "purple.300",
                     borderWidth: "2px",
                   }}
                 />
@@ -259,11 +259,11 @@ const LoginOtherColleges = () => {
                 placeholder="Enter your email address"
                 _focus={{
                   outline: "none",
-                  borderColor: "pink.400",
+                  borderColor: "purple.400",
                   borderWidth: "2px",
                 }}
                 _hover={{
-                  borderColor: "pink.300",
+                  borderColor: "purple.300",
                   borderWidth: "2px",
                 }}
               />
@@ -281,11 +281,11 @@ const LoginOtherColleges = () => {
                 placeholder="5"
                 _focus={{
                   outline: "none",
-                  borderColor: "pink.400",
+                  borderColor: "purple.400",
                   borderWidth: "2px",
                 }}
                 _hover={{
-                  borderColor: "pink.300",
+                  borderColor: "purple.300",
                   borderWidth: "2px",
                 }}
               />
@@ -299,11 +299,11 @@ const LoginOtherColleges = () => {
                 onChange={handleChange}
                 _focus={{
                   outline: "none",
-                  borderColor: "pink.400",
+                  borderColor: "purple.400",
                   borderWidth: "2px",
                 }}
                 _hover={{
-                  borderColor: "pink.300",
+                  borderColor: "purple.300",
                   borderWidth: "2px",
                 }}
               >
@@ -325,11 +325,11 @@ const LoginOtherColleges = () => {
                 placeholder="Enter your college name and location"
                 _focus={{
                   outline: "none",
-                  borderColor: "pink.400",
+                  borderColor: "purple.400",
                   borderWidth: "2px",
                 }}
                 _hover={{
-                  borderColor: "pink.300",
+                  borderColor: "purple.300",
                   borderWidth: "2px",
                 }}
               />
@@ -349,11 +349,11 @@ const LoginOtherColleges = () => {
                   placeholder="Your phone no."
                   _focus={{
                     outline: "none",
-                    borderColor: "pink.400",
+                    borderColor: "purple.400",
                     borderWidth: "2px",
                   }}
                   _hover={{
-                    borderColor: "pink.300",
+                    borderColor: "purple.300",
                     borderWidth: "2px",
                   }}
                 />
@@ -362,7 +362,7 @@ const LoginOtherColleges = () => {
             <Stack spacing={10} pt={2}>
               <Button
                 size="lg"
-                bg={"pink.400"}
+                bg={"purple.400"}
                 color={"white"}
                 onClick={handleSubmit}
               >
@@ -372,7 +372,7 @@ const LoginOtherColleges = () => {
           </Stack>
         </Box>
       </Stack>
-      <Text pb="30px" color="pink.500">
+      <Text pb="30px" color="purple.500">
         Need help with registration ?{" "}
         <b>
           <NextLink href="/contact-council">Click here</NextLink>

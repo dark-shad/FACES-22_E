@@ -63,7 +63,7 @@ class Flower {
     var petal = document.createElement("div");
     petal.style.userSelect = "none";
     petal.style.position = "absolute";
-    petal.style.background = "radial-gradient(white 10%, pink 70%)";
+    petal.style.background = "radial-gradient(white 10%, purple 70%)";
     petal.style.backgroundSize = this.size + "vmin";
     petal.style.backgroundPosition = "-" + this.size / 2 + "vmin 0";
     petal.style.width = petal.style.height = this.size / 2 + "vmin";

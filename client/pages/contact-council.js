@@ -89,7 +89,7 @@ export default function AboutCouncil() {
         >
           <Center flexDir="column" gridGap={"5"}>
             <Center py={{ base: "50px", lg: "30px" }}>
-              <Heading fontSize={{ base: "17pt", lg: "auto" }} color="pink.500">
+              <Heading fontSize={{ base: "17pt", lg: "auto" }} color="purple.500">
                 Contact the council members
               </Heading>
             </Center>
@@ -98,7 +98,7 @@ export default function AboutCouncil() {
                 <Box p="15px" borderRadius={"10px"} bg="#fcb1cb" key={index}>
                   <Center>
                     <Text
-                      color={"pink.500"}
+                      color={"purple.500"}
                       fontSize={{ base: "2xl", md: "3xl" }}
                     >
                       {member.name}
@@ -106,7 +106,7 @@ export default function AboutCouncil() {
                   </Center>
                   <Center>
                     <Text
-                      color={"pink.400"}
+                      color={"purple.400"}
                       fontWeight="bold"
                       fontSize={{ base: "xl", md: "2xl" }}
                     >
@@ -114,19 +114,19 @@ export default function AboutCouncil() {
                     </Text>
                   </Center>
                   <Center gridGap={3}>
-                    <Icon as={BsPhone} size={"45px"} color={"pink.400"} />
+                    <Icon as={BsPhone} size={"45px"} color={"purple.400"} />
                     <Text
-                      color={"pink.400"}
+                      color={"purple.400"}
                       fontSize={{ base: "xl", md: "2xl" }}
                     >
                       {member.phNo}
                     </Text>
                   </Center>
                   <Center gridGap={3}>
-                    <Icon color={"pink.400"} as={BsInstagram} size="45px" />
+                    <Icon color={"purple.400"} as={BsInstagram} size="45px" />
                     <Link
                       href={`https://instagram.com/${member.igId}`}
-                      color={"pink.400"}
+                      color={"purple.400"}
                       fontSize={{ base: "xl", md: "2xl" }}
                       target="_blank"
                     >

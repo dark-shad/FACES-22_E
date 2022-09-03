@@ -42,7 +42,7 @@ export default function EventCard({ event }) {
               bg="transparent"
               _hover={{
                 bg: "white",
-                color: "pink.300",
+                color: "purple.300",
                 width: "80%",
               }}
               color="white"

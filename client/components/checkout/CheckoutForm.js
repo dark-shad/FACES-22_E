@@ -32,12 +32,12 @@ function RadioCard(props) {
       <Box
         {...checkbox}
         cursor="pointer"
-        bg="pink.100"
+        bg="purple.100"
         borderRadius="md"
         boxShadow="md"
         _checked={{
           bg: "linear-gradient(315deg, #e96196 0%, #ffffff 74%)",
-          color: "pink.600",
+          color: "purple.600",
         }}
         _focus={{
           outline: "none!important",
@@ -48,7 +48,7 @@ function RadioCard(props) {
         w={{ base: "auto", lg: "auto" }}
         fontSize={{ base: "13pt", md: "13pt" }}
         transition={"all 0.2s ease"}
-        color="pink.400"
+        color="purple.400"
       >
         {props.children}
       </Box>
@@ -256,8 +256,8 @@ export default function CheckoutForm({ participations, user, setEvents }) {
                 onChange={(e) => setDonationOtherValue(e.target.value)}
                 borderRadius="10px"
                 _focus={{
-                  bg: "pink.100",
-                  color: "pink.600",
+                  bg: "purple.100",
+                  color: "purple.600",
                 }}
               />
               <InputRightElement width="4.5rem">
@@ -290,13 +290,13 @@ export default function CheckoutForm({ participations, user, setEvents }) {
       <Flex>
         <Button
           isFullWidth
-          // bg="pink.300"
+          // bg="purple.300"
           _focus={{
-            bg: "pink.300",
+            bg: "purple.300",
             color: "white",
           }}
           _hover={{
-            bg: "pink.300",
+            bg: "purple.300",
             color: "white",
           }}
           onClick={() => {
@@ -318,8 +318,8 @@ export default function CheckoutForm({ participations, user, setEvents }) {
         placeholder="Enter transaction Id"
         borderRadius="10px"
         _focus={{
-          bg: "pink.100",
-          color: "pink.600",
+          bg: "purple.100",
+          color: "purple.600",
         }}
         transition={"all 0.2s ease"}
         value={transactionId}

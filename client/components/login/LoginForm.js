@@ -138,23 +138,23 @@ const LoginForm = () => {
       minH={"80vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("pink.100", "pink.800")}
+      bg={useColorModeValue("purple.100", "purple.800")}
       w="100%"
       borderRadius={"10px"}
       flexDir="column"
     >
       <Stack w="100%" spacing={6} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading color="pink.600" fontSize={"3xl"}>
+          <Heading color="purple.600" fontSize={"3xl"}>
             Credentials are sent via email
           </Heading>
-          <Text color={"pink.500"} fontSize={"xl"}>
+          <Text color={"purple.500"} fontSize={"xl"}>
             *check spam folder if not in inbox
           </Text>
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("pink.50", "gray.700")}
+          bg={useColorModeValue("purple.50", "gray.700")}
           boxShadow={"lg"}
           p={8}
           w="100%"
@@ -170,11 +170,11 @@ const LoginForm = () => {
                 onChange={handleChange}
                 _focus={{
                   outline: "none",
-                  borderColor: "pink.400",
+                  borderColor: "purple.400",
                   borderWidth: "2px",
                 }}
                 _hover={{
-                  borderColor: "pink.300",
+                  borderColor: "purple.300",
                   borderWidth: "2px",
                 }}
               />
@@ -196,11 +196,11 @@ const LoginForm = () => {
                   placeholder="Enter your password"
                   _focus={{
                     outline: "none",
-                    borderColor: "pink.400",
+                    borderColor: "purple.400",
                     borderWidth: "2px",
                   }}
                   _hover={{
-                    borderColor: "pink.300",
+                    borderColor: "purple.300",
                     borderWidth: "2px",
                   }}
                 />
@@ -218,10 +218,10 @@ const LoginForm = () => {
             <Stack spacing={10}>
               <Button
                 size="lg"
-                bg={"pink.400"}
+                bg={"purple.400"}
                 color={"white"}
                 _hover={{
-                  bg: "pink.500",
+                  bg: "purple.500",
                 }}
                 isLoading={isLoading}
                 isDisabled={isLoading}
@@ -233,7 +233,7 @@ const LoginForm = () => {
           </Stack>
         </Box>
       </Stack>
-      <Text color="pink.500">
+      <Text color="purple.500">
         Need help with login ?{" "}
         <b>
           <NextLink href="/contact-council">Click here</NextLink>

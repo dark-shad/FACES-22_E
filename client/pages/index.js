@@ -84,7 +84,7 @@ export default function Home(props) {
         <Flex bg="transparent" h="100vh" maxW="100vw" flexDirection="column">
           <Center h="60vh" w="100%" flexDir={"column"}>
             <Box w="80%">
-              <Heading color="pink.300" fontSize="6xl">
+              <Heading color="purple.300" fontSize="6xl">
                 FACES-22{" "}
                 <Text fontSize="8xl" fontFamily="Birthstone Bounce">
                   Udaan
@@ -103,7 +103,7 @@ export default function Home(props) {
             <Box w="80%">
               {/* {!over ? (
                 <Text
-                  color={"pink.400"}
+                  color={"purple.400"}
                   fontWeight="bold"
                   fontSize={{ base: "3xl", lg: "4xl" }}
                 >
@@ -113,7 +113,7 @@ export default function Home(props) {
                 ""
               )} */}
               {/* <Text
-                color="pink.300"
+                color="purple.300"
                 fontWeight={"500"}
                 fontSize={{ base: "2xl", lg: "2xl" }}
               >
@@ -121,7 +121,7 @@ export default function Home(props) {
               </Text> */}
               {/* <Text
                 mt={3}
-                color={"pink.400"}
+                color={"purple.400"}
                 fontWeight={"800"}
                 fontSize={"5xl"}
               >
@@ -133,7 +133,7 @@ export default function Home(props) {
         {/* <DroneEvent /> */}
         <FeaturedEvents events={props.events} />
         <Sponsors />
-        <FooterOnTopOfFooter />
+        {/* <FooterOnTopOfFooter /> */}
       </Layout>
     </>
   );

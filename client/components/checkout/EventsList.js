@@ -51,7 +51,7 @@ export default function EventsList(props) {
                 href="/events"
                 textDecor={"underline"}
                 as="a"
-                color="pink.600"
+                color="purple.600"
               >
                 Events
               </Box>{" "}

@@ -51,9 +51,9 @@ function RadioCard(props) {
         borderRadius="md"
         boxShadow="md"
         _checked={{
-          bg: "pink.400",
+          bg: "purple.400",
           color: "white",
-          borderColor: "pink.600",
+          borderColor: "purple.600",
         }}
         _focus={{
           boxShadow: "outline",
@@ -237,10 +237,10 @@ export default function Profile(props) {
           <div className="profileEditDiv" >
           <Center bg="transparent" h={{ base: "13vh", md: "15vh" }}/>
           <Stack align={"center"}>
-            <Heading fontSize={"4xl"} textAlign={"center"} color="pink.500">
+            <Heading fontSize={"4xl"} textAlign={"center"} color="purple.500">
               Profile
             </Heading>
-            {/* <Text fontSize={"2xl"} color={"pink.500"}>
+            {/* <Text fontSize={"2xl"} color={"purple.500"}>
               to participate in all events ✌️
             </Text> */}
           </Stack>
@@ -282,7 +282,7 @@ export default function Profile(props) {
                       }}
                     />
                     <Button
-                      bg="pink.400"
+                      bg="purple.400"
                       onClick={randomAvatar}
                       m={2}
                       ml={5}
@@ -382,7 +382,7 @@ export default function Profile(props) {
                       </InputRightElement>
                     </InputGroup>
                     {editPhone && (
-                      <Button bg="pink.400" onClick={login} m={2} color="white">
+                      <Button bg="purple.400" onClick={login} m={2} color="white">
                         Verify OTP
                       </Button>
                     )}
@@ -401,7 +401,7 @@ export default function Profile(props) {
                       />
                       <Button
                         onClick={verifyOTP}
-                        bg={"pink.400"}
+                        bg={"purple.400"}
                         m={3}
                         color="white"
                       >
@@ -413,7 +413,7 @@ export default function Profile(props) {
                     <Button
                       loadingText="Submitting"
                       size="lg"
-                      bg={"pink.400"}
+                      bg={"purple.400"}
                       color={"white"}
                       onClick={updateProfile}
                       _hover={{

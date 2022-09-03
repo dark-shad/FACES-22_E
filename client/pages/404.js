@@ -16,7 +16,7 @@ export default function NotFound() {
       </Head>
       <Background pageName="Home" />
       <Center id="blossom-container" flexDir={"column"} h="100vh">
-        <Text color="pink.400" fontSize="30pt" fontWeight="bold">
+        <Text color="purple.400" fontSize="30pt" fontWeight="bold">
           404 | PAGE NOT FOUND
         </Text>
       </Center>

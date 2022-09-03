@@ -273,7 +273,7 @@ export default function EventCard({ event }) {
               bg="transparent"
               _hover={{
                 bg: "white",
-                color: "pink.300",
+                color: "purple.300",
                 width: "80%",
               }}
               color="white"
@@ -408,7 +408,7 @@ export default function EventCard({ event }) {
             gridGap="3"
           >
             <Flex
-              color="pink.400"
+              color="purple.400"
               className="listMarginLeft"
               fontSize={{ base: "12pt", md: "17pt" }}
               flexDirection="column"
@@ -433,7 +433,7 @@ export default function EventCard({ event }) {
             <Flex p="15px" gridGap="5" flexDir="column">
               {event.size > 1 && (
                 <Text
-                  color="pink.400"
+                  color="purple.400"
                   fontWeight="bold"
                   fontSize={{ base: "12pt", md: "17pt" }}
                 >
@@ -443,14 +443,14 @@ export default function EventCard({ event }) {
               )}
               <Text
                 fontSize={{ base: "12pt", md: "17pt" }}
-                color={event.max_seats - event.seats < 10 ? "red" : "pink.400"}
+                color={event.max_seats - event.seats < 10 ? "red" : "purple.400"}
                 fontWeight="bold"
               >
                 Seats booked: {event.seats} / {event.max_seats}
               </Text>
               <Text
                 fontSize={{ base: "12pt", md: "18pt" }}
-                color="pink.400"
+                color="purple.400"
                 fontWeight="bold"
               >
                 Event price:{" "}
@@ -461,14 +461,14 @@ export default function EventCard({ event }) {
             {user && event.team_size > 1 && !isRegistered && (
               <Flex flexDirection="column" gridGap="3">
                 <Flex
-                  bg="pink.200"
+                  bg="purple.200"
                   borderRadius="10px"
                   mt={4}
                   flexDirection="column"
                   p="20px"
                   gridGap="3"
                 >
-                  <Text color="pink.400" fontSize="15pt" fontWeight="bold">
+                  <Text color="purple.400" fontSize="15pt" fontWeight="bold">
                     Enter team mate information{" "}
                     <span style={{ color: "red" }}>
                       Enter your own ROLL NO as well !!
@@ -540,7 +540,7 @@ export default function EventCard({ event }) {
                     // color="whitesmoke"
                     gridGap={2}
                     alignItems="center"
-                    bgColor="pink.200"
+                    bgColor="purple.200"
                     borderRadius="md"
                   >
                     <Text>Registered</Text>

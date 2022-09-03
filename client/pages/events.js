@@ -207,7 +207,7 @@ export default function Events(props) {
               flexDir={"column"}
             >
               <Box w="80%">
-                <Heading color="pink.300" fontSize="6xl">
+                <Heading color="purple.300" fontSize="6xl">
                   FACES-22{" "}
                   <Text fontSize="8xl" fontFamily="Birthstone Bounce">
                     Udaan
@@ -218,7 +218,7 @@ export default function Events(props) {
                 <Text
                   fontSize={{ base: "xl", md: "3xl" }}
                   fontWeight={"normal"}
-                  color="pink.400"
+                  color="purple.400"
                 >
                   FACES offers you a variety of events to choose from. Feel free
                   to pick any event of your choice from Cultural and
@@ -235,12 +235,12 @@ export default function Events(props) {
                 onChange={(e) => setCatSelect(e.target.value)}
                 placeholder="Select Category"
                 _focus={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "purple.500",
+                  borderColor: "purple.500",
                 }}
                 _hover={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "purple.500",
+                  borderColor: "purple.500",
                 }}
               >
                 {/* <option value="T">Technical</option> */}
@@ -252,12 +252,12 @@ export default function Events(props) {
                 onChange={(e) => setDaySelect(e.target.value)}
                 placeholder="Select Day"
                 _focus={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "purple.500",
+                  borderColor: "purple.500",
                 }}
                 _hover={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "purple.500",
+                  borderColor: "purple.500",
                 }}
               >
                 <option value="1">Day 1</option>
@@ -266,12 +266,12 @@ export default function Events(props) {
               </Select>
               <Button
                 _focus={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "purple.500",
+                  borderColor: "purple.500",
                 }}
                 _hover={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "purple.500",
+                  borderColor: "purple.500",
                 }}
                 variant="outline"
                 fontWeight={"normal"}
