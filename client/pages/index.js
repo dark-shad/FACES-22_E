@@ -10,7 +10,7 @@ import Sponsors from "../components/misc/Sponsors";
 import FeaturedEvents from "../components/misc/FeaturedEvents";
 import { API_BASE_URL } from "../config";
 import DroneEvent from "../components/misc/DroneEvent";
-import FooterOnTopOfFooter from "../components/misc/FooterOnTopOfFooter";
+//import FooterOnTopOfFooter from "../components/misc/FooterOnTopOfFooter";
 
 if (typeof window !== "undefined") {
   import("../components/utils/blossom");
@@ -71,9 +71,9 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22</title>
+        <title>FACES-22</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
-        <meta name="title" content="ETAMAX-22" />
+        <meta name="title" content="FACES-22" />
         <meta
           name="description"
           content="Annual sports and cultural festival organised at F.C.R.I.T"
@@ -85,9 +85,9 @@ export default function Home(props) {
           <Center h="60vh" w="100%" flexDir={"column"}>
             <Box w="80%">
               <Heading color="pink.300" fontSize="6xl">
-                ETAMAX-22{" "}
+                FACES-22{" "}
                 <Text fontSize="8xl" fontFamily="Birthstone Bounce">
-                  Fleur
+                  Udaan
                 </Text>
               </Heading>
             </Box>
@@ -125,15 +125,14 @@ export default function Home(props) {
                 fontWeight={"800"}
                 fontSize={"5xl"}
               >
-                Registrations closed!
+                
               </Text>
             </Box>
           </Center>
         </Flex>
-        <DroneEvent />
+        
         <FeaturedEvents events={props.events} />
         <Sponsors />
-        <FooterOnTopOfFooter />
       </Layout>
     </>
   );

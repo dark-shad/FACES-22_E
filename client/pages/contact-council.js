@@ -21,13 +21,13 @@ if (typeof window !== "undefined") {
 export default function AboutCouncil() {
   const [councilMembers, setCouncilMembers] = useState([
     {
-      name: "Celine Fernandes",
+      name: "Paul Sheban",
       post: "General Secretary",
-      phNo: "+91 97693 85854",
-      igId: "celinenfernandes",
+      phNo: "+91 9004022599",
+      igId: "paulsamuel2002",
     },
     {
-      name: "Ritwik Saraf",
+      name: "Mustfa Moiyy",
       post: "Joint Secretary",
       phNo: "+91 76660 53044",
       igId: "ritwik.saraf",

@@ -24,31 +24,31 @@ export default function Footer() {
           color="pink.400"
         >
           Developed by{" "}
-          <Link target="_blank" href="https://github.com/theabbie">
-            Abhishek
+          <Link target="_blank" href="https://github.com/karishmarajput">
+            Karishma
           </Link>
           ,{" "}
-          <Link target="_blank" href="https://www.adiunni.tech/">
-            Aditya
+          <Link target="_blank" href="https://github.com/Pauloper1">
+            Paul
           </Link>
           ,{" "}
-          <Link target="_blank" href="https://github.com/rgab1508">
-            Gabriel
+          <Link target="_blank" href="https://github.com/Aaryan246">
+            Aaryan
           </Link>
           ,{" "}
-          <Link target="_blank" href="https://github.com/dcostat04">
-            Trevor
+          <Link target="_blank" href="https://github.com/dark-shad">
+            Pratik
           </Link>
           ,{" "}
           <Link
             target="_blank"
-            href="https://www.linkedin.com/in/anushka-amte-210253195/"
+            href="https://github.com/VinayakPatkar"
           >
-            Anushka
+            Vinayak
           </Link>{" "}
           &{" "}
-          <Link target="_blank" href="https://www.linkedin.com/in/elishagras/">
-            Elisha
+          <Link target="_blank" href="https://github.com/joel122002">
+            Joel
           </Link>
         </Text>
         <Text
