@@ -17,7 +17,7 @@ College Event Registration Website.
 			1. clone the repository
       ```bash
       git clone https://github.com/rgab1508/ETAMAX-22.git
-      cd FACES-21/
+      cd FACES-22_E/
       ```
       2. Setting up a Virtual Env
       ```bash
