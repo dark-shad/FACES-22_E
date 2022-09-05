@@ -92,10 +92,7 @@ export default function Home(props) {
                 </Text>
               </Heading>
             </Box>
-            <div class="cloud cloud1">
-              <div class="light"></div>
-            <img src="https://raw.githubusercontent.com/dark-shad/etamax_imagaes/4e712c4dfdfb93e25e3d399ba24ae0fa34978857/FACES%20(2).svg" width={`200px`} height={`200px`}></img>
-            </div>
+            <img id="plane" src="https://raw.githubusercontent.com/dark-shad/etamax_imagaes/9729076a808d78373c64bd20bdc6554b3b3b6db2/2.svg"></img>
             
             
 
