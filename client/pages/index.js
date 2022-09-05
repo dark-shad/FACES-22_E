@@ -92,7 +92,7 @@ export default function Home(props) {
               </Heading>
             </Box>
           </Center>
-          <Center
+          git commit -m "bg<Center
             h={{
               base: "calc(30vh - 100px)",
               lg: "calc(30vh - 100px)",
