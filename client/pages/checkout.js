@@ -38,7 +38,7 @@ export default function Checkout() {
       <Layout>
         {user && (
           <Center
-            backgroundImage={"assets/checkout.svg"}
+            //backgroundImage={"assets/checkout.svg"}
             backgroundSize={"cover"}
             backgroundPosition={"center"}
             backgroundRepeat={"no-repeat"}

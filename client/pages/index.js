@@ -9,12 +9,12 @@ import "@fontsource/birthstone-bounce";
 import Sponsors from "../components/misc/Sponsors";
 import FeaturedEvents from "../components/misc/FeaturedEvents";
 import { API_BASE_URL } from "../config";
-import DroneEvent from "../components/misc/DroneEvent";
+//import DroneEvent from "../components/misc/DroneEvent";
 //import FooterOnTopOfFooter from "../components/misc/FooterOnTopOfFooter";
 
-if (typeof window !== "undefined") {
-  import("../components/utils/blossom");
-}
+//if (typeof window !== "undefined") {
+//  import("../components/utils/blossom");
+//}
 
 export default function Home(props) {
   const [over, setOver] = useState(false);
@@ -79,7 +79,7 @@ export default function Home(props) {
           content="Annual sports and cultural festival organised at F.C.R.I.T"
         />
       </Head>
-      <Background pageName={"Home"} />
+      
       <Layout scrollYVar={450}>
         <Flex bg="transparent" h="100vh" maxW="100vw" flexDirection="column">
           <Center h="60vh" w="100%" flexDir={"column"}>

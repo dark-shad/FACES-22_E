@@ -37,7 +37,7 @@ function Logo({ visible, ...rest }) {
         fontWeight="bolder"
         color="white"
       >
-        {visible ? "ETAMAX - 22" : ""}
+        {visible ? "FACES - 22" : ""}
       </Heading>
     </Center>
   );

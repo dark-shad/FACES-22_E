@@ -9,22 +9,22 @@ import {
 } from "@chakra-ui/react";
 import LoginForm from "../components/login/LoginForm";
 import LoginOtherColleges from "../components/login/LoginOtherColleges";
-import Background from "../components/misc/Background";
+//import Background from "../components/misc/Background";
 import Head from "next/head";
 import * as cookie from "cookie";
 
-if (typeof window !== "undefined") {
-  import("../components/utils/blossom");
-}
+//if (typeof window !== "undefined") {
+//  import("../components/utils/blossom");
+//}
 
 export default function Login(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22 | Login</title>
+        <title>FACES-22 | Login</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
-      <Background pageName={"Login"} />
+      
       <Box
         id="blossom-container"
         w="100vw"
