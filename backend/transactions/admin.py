@@ -54,6 +54,14 @@ class DateFilterList(admin.SimpleListFilter):
     if self.value() == 'D2':
       return queryset.filter(timestamp__gte=f"{day_before_yesterday.year}-{day_before_yesterday.month}-{day_before_yesterday.day}", timestamp__lt=f"{yesterday.year}-{yesterday.month}-{yesterday.day}")
 
+@admin.register(Transaction)
+class TransactionAdmin(admin.ModelAdmin):
+  form = TransactionForm
+  search_fields = ['transaction_id', 'upi_transaction_id', 'user__roll_no']
+  list_display = ['transaction_id', 'upi_transaction_id', 'timestamp', 'is_verified',  'event_amount', 'donation_amount', 'total_amount', 'is_paid',]
+  list_filter = ['is_verified', 'is_paid', DateFilterList]
+
+
 @admin.action(description="Download Csv")
 def export_as_csv(self, request, queryset):
     model = queryset.model
