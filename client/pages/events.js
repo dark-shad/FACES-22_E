@@ -10,14 +10,14 @@ import {
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import EventCard from "../components/cards/EventCards";
-import Background from "../components/misc/Background";
+//import Background from "../components/misc/Background";
 import Layout from "../components/layout";
 import { API_BASE_URL } from "../config";
 import { useRouter } from "next/router";
 
-if (typeof window !== "undefined") {
-  import("../components/utils/blossom");
-}
+//if (typeof window !== "undefined") {
+//  import("../components/utils/blossom");
+//}
 
 export default function Events(props) {
   const router = useRouter();
@@ -25,12 +25,12 @@ export default function Events(props) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const dist = window.scrollY;
-      document.getElementById(
+      /*document.getElementById(
         "blossom-container"
       ).style.transform = `-translateY(${dist * 1}px)`;
       document.getElementById(
         "background-image"
-      ).style.transform = `translateY(${dist * 0.03}px)`;
+      ).style.transform = `translateY(${dist * 0.03}px)`;*/
     });
   }, []);
 
@@ -187,7 +187,7 @@ export default function Events(props) {
         />
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
-      <Background pageName={"Events"} />
+      
       <Layout scrollYVar={450}>
         <Flex
           id="blossom-container"

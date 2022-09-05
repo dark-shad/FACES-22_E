@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <Flex
       as="footer"
-      bg="pink.100"
+      bg="purple"
       w="100%"
       h={{ md: "7vh" }}
       py="20px"

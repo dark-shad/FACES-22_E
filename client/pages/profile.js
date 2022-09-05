@@ -25,7 +25,7 @@ import {
 import { EditIcon } from "@chakra-ui/icons";
 import Layout from "../components/layout";
 import Head from "next/head";
-import Background from "../components/misc/Background";
+//import Background from "../components/misc/Background";
 import { useState, useEffect } from "react";
 import { API_BASE_URL } from "../config";
 import * as cookie from "cookie";
@@ -218,9 +218,8 @@ export default function Profile(props) {
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <Layout scrollYVar={80}>
-        <Background pageName={"Home"} />
         <Center
-          backgroundImage={"assets/checkout.svg"}
+          //backgroundImage={"assets/checkout.svg"}
           backgroundSize={"cover"}
           backgroundPosition={"center"}
           backgroundRepeat={"no-repeat"}
