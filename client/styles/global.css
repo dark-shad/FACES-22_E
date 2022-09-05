@@ -111,3 +111,26 @@ body::-webkit-scrollbar-track {
     scrollbar-width: none;
   }
 }
+.light {
+
+  position: absolute;
+  z-index: 10;
+  /* left: -10px; */
+  animation: light 200ms ease-in-out 0s infinite alternate;
+}
+.cloud {
+  position: absolute;
+  /* top: 300px;
+  right: 500px; */
+  opacity: .8;
+  animation: cloud  4s linear infinite reverse;
+  z-index: 99;
+}
+@keyframes light {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes cloud {
+  from { top: 20px; left: calc(100% - 320px); }
+  to {top: calc(100% ); left: 20px; }
+}

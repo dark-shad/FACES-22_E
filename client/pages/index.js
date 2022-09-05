@@ -1,6 +1,6 @@
 import { Box, Center, Heading, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import Flower from "../components/misc/Flower";
+// import Flower from "../components/misc/Flower";
 import { randNum } from "../components/utils/utils";
 import Layout from "../components/layout";
 import Head from "next/head";
@@ -40,24 +40,25 @@ export default function Home(props) {
   });
 
   useEffect(() => {
-    window.addEventListener("mousedown", function(e) {
-      var amt = randNum(1, 3);
-      for (var i = 0; i < amt; i++) {
-        var top = randNum(e.clientY - 30, e.clientY + 30);
-        var left = randNum(e.clientX - 30, e.clientX + 10);
-        var flower = new Flower({
-          top: top,
-          left: left,
-        });
-      }
-    });
+    // window.addEventListener("mousedown", function(e) {
+    //   var amt = randNum(1, 3);
+    //   for (var i = 0; i < amt; i++) {
+    //     var top = randNum(e.clientY - 30, e.clientY + 30);
+    //     var left = randNum(e.clientX - 30, e.clientX + 10);
+    //     var flower = new Flower({
+    //       top: top,
+    //       left: left,
+    //     });
+    //   }
+    // });
 
-    return () => {
-      window.removeEventListener("mousedown", () => {
-        console.log("removed");
-      });
-    };
-  }, []);
+    // return () => {
+    //   window.removeEventListener("mousedown", () => {
+    //     console.log("removed");
+    //   });
+    // };
+  },
+   []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -91,6 +92,13 @@ export default function Home(props) {
                 </Text>
               </Heading>
             </Box>
+            <div class="cloud cloud1">
+              <div class="light"></div>
+            <img src="https://raw.githubusercontent.com/dark-shad/etamax_imagaes/4e712c4dfdfb93e25e3d399ba24ae0fa34978857/FACES%20(2).svg" width={`200px`} height={`200px`}></img>
+            </div>
+            
+            
+
           </Center>
           <Center
             h={{
