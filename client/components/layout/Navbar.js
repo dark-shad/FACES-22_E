@@ -285,7 +285,7 @@ function NavbarContainer({ setVisible, scrollyvar, children, ...rest }) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > scrollyvar) {
-        setBackground("#fcc0cb");
+        setBackground("#7A5980");
       } else {
         setBackground("transparent");
       }

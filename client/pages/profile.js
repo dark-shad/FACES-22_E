@@ -226,7 +226,7 @@ export default function Profile(props) {
       <Layout scrollYVar={80}>
         <Background pageName={"Home"} />
         <Center
-          backgroundImage={"assets/checkout.svg"}
+          backgroundImage={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
           backgroundSize={"cover"}
           backgroundPosition={"center"}
           backgroundRepeat={"no-repeat"}
@@ -258,8 +258,9 @@ export default function Profile(props) {
               h="99%"
               p="10px"
               flexDir={"column"}
+              
             >
-              <Box rounded={"lg"} bg="white" boxShadow={"lg"} p={8}>
+              <Box rounded={"lg"} bg="white" boxShadow={"lg"} p={8} className="box1Checkout">
                 <Stack spacing={4}>
                   <Flex align="center">
                     <Avatar
@@ -282,11 +283,14 @@ export default function Profile(props) {
                       }}
                     />
                     <Button
-                      bg="purple.400"
+                      bg="purple.800"
                       onClick={randomAvatar}
                       m={2}
                       ml={5}
                       color="white"
+                      _hover={{
+                        bg: "purple.500",
+                      }}
                     >
                       SHUFFLE
                     </Button>
@@ -413,11 +417,11 @@ export default function Profile(props) {
                     <Button
                       loadingText="Submitting"
                       size="lg"
-                      bg={"purple.400"}
+                      bg={"purple.800"}
                       color={"white"}
                       onClick={updateProfile}
                       _hover={{
-                        bg: "blue.500",
+                        bg: "purple.500",
                       }}
                     >
                       Save Profile
@@ -433,6 +437,7 @@ export default function Profile(props) {
               h="96%"
               p="10px"
               flexDir={"column"}
+              className="box1Checkout"
             >
               <EventsList
                 events={profile.participations.filter((p) => p.transaction)}

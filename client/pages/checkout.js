@@ -38,7 +38,7 @@ export default function Checkout() {
       <Layout>
         {user && (
           <Center
-            backgroundImage={"assets/checkout.svg"}
+            backgroundImage={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
             backgroundSize={"cover"}
             backgroundPosition={"center"}
             backgroundRepeat={"no-repeat"}
@@ -62,6 +62,7 @@ export default function Checkout() {
                 h="100%"
                 p="10px"
                 flexDir={"column"}
+                className="box1Checkout"
               >
                 {/* House the selected events */}
                 <EventsList
@@ -77,6 +78,7 @@ export default function Checkout() {
                 h="100%"
                 p="10px"
                 flexDir={"column"}
+                className="box1Checkout"
               >
                 {/* Display total price and donations */}
                 <CheckoutForm
