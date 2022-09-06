@@ -222,18 +222,18 @@ export default function CheckoutForm({ participations, user, setEvents }) {
       <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Event Total:</b> Rs. {eventAmount}
       </Text>
-      <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
+      {/* <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Donation Amount:</b> Rs. {donation}
-      </Text>
+      </Text> */}
       <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Total Amount:</b> Rs. {totalAmount}
       </Text>
-      <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
+      {/* <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         Would you like to donate for this event?
-      </Text>
+      </Text> */}
       <SlideFade in={true}>
         <Flex flexDir={"column"} gridGap="4">
-          <Flex wrap="wrap" gridGap={2} {...group}>
+          {/* <Flex wrap="wrap" gridGap={2} {...group}>
             {donateOptions.map((value, index) => {
               const radio = getRadioProps({ value: value });
               return (
@@ -242,7 +242,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
                 </RadioCard>
               );
             })}
-          </Flex>
+          </Flex> */}
           {/* <SlideFade in={donationOther}>
             <InputGroup>
               <InputLeftAddon children="Rs. " />

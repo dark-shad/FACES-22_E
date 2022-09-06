@@ -31,6 +31,9 @@
 
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -85,6 +88,28 @@ body::-webkit-scrollbar-track {
   background-color: #d4aa70;
   border-radius: 100px;
 } */
+
+
+
+#plane{
+  width: 18rem;
+  height: 18rem;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation: example 5s linear 0s infinite ;
+
+}
+
+@keyframes example {
+  100%   { left:100vw; top:0;}
+ 
+  50% { left:0; top:48vh;}
+
+  0% { left:-50vw; top:48vh;}
+
+}
+
 @media screen and (max-width: 768px) {
   html::-webkit-scrollbar {
     display: none;
@@ -110,27 +135,23 @@ body::-webkit-scrollbar-track {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-}
-.light {
 
-  position: absolute;
-  z-index: 10;
-  /* left: -10px; */
-  animation: light 200ms ease-in-out 0s infinite alternate;
+  @keyframes example {
+    100%   { left:100vw; top:0;}
+   
+    50% { left:0; top:45vh;}
+  
+    0% { left:-50vw; top:45vh;}
+  
+  }
 }
-.cloud {
-  position: absolute;
-  /* top: 300px;
-  right: 500px; */
-  opacity: .8;
-  animation: cloud  4s linear infinite reverse;
-  z-index: 99;
+.box1Checkout{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.28) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.41);
 }
-@keyframes light {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@keyframes cloud {
-  from { top: 20px; left: calc(100% - 320px); }
-  to {top: calc(100% ); left: 20px; }
-}
+
