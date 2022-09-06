@@ -40,33 +40,37 @@ class UserManager(BaseUserManager):
       user.set_password(password)
       user.save()
       return user
+  # def create_superuser(self,roll_no, email, password, **extra_fields):
+  #     """
+  #     Create and save a SuperUser with the given email and password.
+  #     """
+  #     extra_fields.setdefault('is_staff', True)
+  #     extra_fields.setdefault('is_superuser', True)
+  #     extra_fields.setdefault('is_active', True)
+
+  #     if extra_fields.get('is_staff') is not True:
+  #         raise ValueError(_('Superuser must have is_staff=True.'))
+  #     if extra_fields.get('is_superuser') is not True:
+  #         raise ValueError(_('Superuser must have is_superuser=True.'))
+
+  #     return self.create_user(roll_no, email, password, **extra_fields)
+
+# to create super user uncomment above user 
+
+# to create bulkUsers uncomment below code
+
 
   def create_superuser(self,roll_no, email, password, **extra_fields):
-    """
-    Create and save a SuperUser with the given email and password.
-    """
     extra_fields.setdefault('is_staff', False)
     extra_fields.setdefault('is_superuser', False)
     extra_fields.setdefault('is_active', True)
-
-    # if extra_fields.get('is_staff') is not True:
-    #     raise ValueError(_('Superuser must have is_staff=True.'))
-    # if extra_fields.get('is_superuser') is not True:
-    #     raise ValueError(_('Superuser must have is_superuser=True.'))
     import csv
-
     with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-
       for row in spamreader:          
-          
-          # AD, 5, 5@gmail.com, Comp, 5, 13pCqSnayL,
-          # row.pop()
-          #print(row)
           row.pop(6)
           print(row)
           [name, roll_no, email, department, semester,password] = row
-          # roll_no=
           roll_no = roll_no.replace(',','')
           roll_no = roll_no.replace(' ','')
           semester = semester.replace(',','')
@@ -78,8 +82,5 @@ class UserManager(BaseUserManager):
           email = email.replace(',','')
           email = email.replace(' ','')
           name = name.replace(',','')
-          print(password)
-          # if you want to createsuperuser create_user(....) instead of create_user_bulk(...) and add true to superuser and staff and comment above code. 56-66 line
-          self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
-      # create_users()    
+          self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)    
     return self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
