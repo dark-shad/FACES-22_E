@@ -138,30 +138,30 @@ const LoginForm = () => {
       minH={"80vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("purple.100", "purple.800")}
+      bg={useColorModeValue("pink.800")}
       w="100%"
       borderRadius={"10px"}
       flexDir="column"
     >
       <Stack w="100%" spacing={6} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading color="purple.600" fontSize={"3xl"}>
+          <Heading color="yellow.600" fontSize={"3xl"}>
             Credentials are sent via email
           </Heading>
-          <Text color={"purple.500"} fontSize={"xl"}>
+          <Text color={"yellow.500"} fontSize={"xl"}>
             *check spam folder if not in inbox
           </Text>
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("purple.50", "gray.700")}
+          bg={useColorModeValue("black.50", "black.700")}
           boxShadow={"lg"}
           p={8}
           w="100%"
         >
           <Stack spacing={4}>
             <FormControl isRequired>
-              <FormLabel>Roll Number</FormLabel>
+              <FormLabel color="white">Roll Number</FormLabel>
               <Input
                 placeholder="Enter roll number/ registration number"
                 type="number"
@@ -180,7 +180,7 @@ const LoginForm = () => {
               />
             </FormControl>
             <FormControl isRequired>
-              <FormLabel>Password</FormLabel>
+              <FormLabel color="white">Password</FormLabel>
               <InputGroup>
                 <Input
                   pr="4.5rem"
@@ -196,11 +196,11 @@ const LoginForm = () => {
                   placeholder="Enter your password"
                   _focus={{
                     outline: "none",
-                    borderColor: "purple.400",
+                    borderColor: "black.400",
                     borderWidth: "2px",
                   }}
                   _hover={{
-                    borderColor: "purple.300",
+                    borderColor: "black.300",
                     borderWidth: "2px",
                   }}
                 />
@@ -233,7 +233,7 @@ const LoginForm = () => {
           </Stack>
         </Box>
       </Stack>
-      <Text color="purple.500">
+      <Text color="white">
         Need help with login ?{" "}
         <b>
           <NextLink href="/contact-council">Click here</NextLink>
