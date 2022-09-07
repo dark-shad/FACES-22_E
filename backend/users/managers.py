@@ -65,7 +65,7 @@ class UserManager(BaseUserManager):
     extra_fields.setdefault('is_superuser', False)
     extra_fields.setdefault('is_active', True)
     import csv
-    with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
+    with open(r'C:\Users\prati\OneDrive\Desktop\FACES-22_E\backend\users\data.csv', newline='') as csvfile:
       spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
       for row in spamreader:          
           row.pop(6)
