@@ -142,6 +142,7 @@ const LoginForm = () => {
       w="100%"
       borderRadius={"10px"}
       flexDir="column"
+      className="box1Checkout"
     >
       <Stack w="100%" spacing={6} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>

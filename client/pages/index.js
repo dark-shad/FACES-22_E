@@ -85,15 +85,14 @@ export default function Home(props) {
         <Flex bg="transparent" h="100vh" maxW="100vw" flexDirection="column">
           <Center h="60vh" w="100%" flexDir={"column"}>
             <Box w="80%">
-              <Heading color="purple.300" fontSize="6xl">
+              {/* <Heading color="purple.300" fontSize="6xl">
                 FACES-22{" "}
                 <Text fontSize="8xl" fontFamily="Birthstone Bounce">
                   Udaan
                 </Text>
-              </Heading>
+              </Heading> */}
             </Box>
-            <img id="plane" src="https://raw.githubusercontent.com/dark-shad/etamax_imagaes/9729076a808d78373c64bd20bdc6554b3b3b6db2/2.svg"></img>
-            
+        
             
 
           </Center>

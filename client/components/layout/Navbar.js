@@ -106,7 +106,7 @@ function MenuItems({ children, to, color, nextLink, isDisabled }) {
 }
 
 function DrawerNavbar({ isOpen, scrollyvar }) {
-  const [color, setColor] = useState("purple.400");
+  const [color, setColor] = useState("purple.900");
   const [loggedIn, setLoggedIn] = useState(false);
   const step2 = useColorModeValue("300", "200");
   const toast = useToast();
@@ -122,7 +122,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
       if (window.scrollY > scrollyvar) {
         setColor("white");
       } else {
-        setColor("purple.400");
+        setColor("purple.900");
       }
     });
 
@@ -148,7 +148,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
           title: "Error",
           description: "Something went wrong",
           status: "error",
-          duration: 4000,
+          duration: 9000,
           isClosable: true,
           position: "top-right",
         });
@@ -177,6 +177,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
       opacity={isOpen ? 1 : 0}
       transition="all 0.22s ease-in-out"
       flexBasis={{ base: "100%", md: "auto" }}
+      
     >
       <Collapse in={isOpen} animateOpacity>
         <Box
