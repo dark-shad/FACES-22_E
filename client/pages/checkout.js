@@ -38,11 +38,12 @@ export default function Checkout() {
       <Layout>
         {user && (
           <Center
-            backgroundImage={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
-            backgroundSize={"cover"}
-            backgroundPosition={"center"}
+            backgroundImage={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
             backgroundRepeat={"no-repeat"}
-            h={{ base: "auto", lg: "105vh" }}
+            objectFit="cover"
+            backgroundPosition="center"
+            backgroundSize="cover"
+            h={{ base: "auto", lg: "auto" }}
             w={"100vw"}
             flexDir={"column"}
           >

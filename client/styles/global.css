@@ -40,7 +40,7 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #ff8ba0;
+  background: #7A5980;
   /* border: 6px solid rgba(0,0,0,0.2); */
 }
 
@@ -55,7 +55,7 @@ body {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #ff8ba0;
+  background: #7A5980;
 }
 
 body::-webkit-scrollbar {
@@ -94,26 +94,6 @@ body::-webkit-scrollbar-track {
 } */
 
 
-
-#plane{
-  width: 18rem;
-  height: 18rem;
-  position: relative;
-  animation-name: example;
-  animation-duration: 10s;
-  animation: example 5s linear 0s infinite ;
-
-}
-
-@keyframes example {
-  100%   { left:100vw; top:0;}
- 
-  50% { left:0; top:48vh;}
-
-  0% { left:-50vw; top:48vh;}
-
-}
-
 @media screen and (max-width: 768px) {
   html::-webkit-scrollbar {
     display: none;
@@ -139,15 +119,10 @@ body::-webkit-scrollbar-track {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  /* *{
+    background-image: url("https://github.com/dark-shad/etamax_imagaes/blob/main/udaan%20fone.png?raw=true")
 
-  @keyframes example {
-    100%   { left:100vw; top:0;}
-   
-    50% { left:0; top:45vh;}
-  
-    0% { left:-50vw; top:45vh;}
-  
-  }
+  } */
 }
 .box1Checkout{
   /* From https://css.glass */

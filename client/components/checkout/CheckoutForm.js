@@ -219,9 +219,9 @@ export default function CheckoutForm({ participations, user, setEvents }) {
       <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Total events:</b> {participations.length}
       </Text>
-      <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
+      {/* <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Event Total:</b> Rs. {eventAmount}
-      </Text>
+      </Text> */}
       {/* <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Donation Amount:</b> Rs. {donation}
       </Text> */}

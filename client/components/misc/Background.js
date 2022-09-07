@@ -11,7 +11,7 @@ export default function Background({ pageName }) {
       {pageName == "Home" && (
         <Box
           as="img"
-          src={"https://user-images.githubusercontent.com/81225216/188874046-cf92268b-203f-4da5-a62a-62cec388a76a.jpg"}
+          src={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
           alt={"Background test"}
           position="fixed"
           zIndex="-2"
@@ -26,7 +26,7 @@ export default function Background({ pageName }) {
       {pageName == "Events" && (
         <Box
           as="img"
-          src={"https://user-images.githubusercontent.com/81225216/188874046-cf92268b-203f-4da5-a62a-62cec388a76a.jpg"}
+          src={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
           alt={"Background test"}
           position="fixed"
           zIndex="-2"
@@ -41,7 +41,7 @@ export default function Background({ pageName }) {
       {pageName == "Login" && (
         <Box
           as="img"
-          src={"https://user-images.githubusercontent.com/81225216/188874046-cf92268b-203f-4da5-a62a-62cec388a76a.jpg"}
+          src={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
           alt={"Background test"}
           position="fixed"
           zIndex="-2"

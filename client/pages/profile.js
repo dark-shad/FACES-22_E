@@ -226,9 +226,8 @@ export default function Profile(props) {
       <Layout scrollYVar={80}>
         <Background pageName={"Home"} />
         <Center
-          backgroundImage={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
-          backgroundSize={"cover"}
-          backgroundPosition={"center"}
+          backgroundImage={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
+          
           backgroundRepeat={"no-repeat"}
           h={{ base: "auto", lg: "130vh" }}
           w={"100vw"}
@@ -335,7 +334,12 @@ export default function Profile(props) {
                   <FormControl id="password" isRequired>
                     <FormLabel>Department</FormLabel>
                     <Flex wrap="wrap">
-                        <Button colorScheme='blue'>{profile.department}</Button>
+                        <Button 
+                        bg="purple.800"
+                        color="white"
+                        _hover={{
+                        bg: "purple.500",
+                      }}>{profile.department}</Button>
                     </Flex>
                   </FormControl>
                   <FormControl id="password" isRequired>
