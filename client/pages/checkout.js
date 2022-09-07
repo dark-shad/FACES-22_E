@@ -46,6 +46,7 @@ export default function Checkout() {
             h={{ base: "auto", lg: "auto" }}
             w={"100vw"}
             flexDir={"column"}
+            className="mobileBg"
           >
             <Center bg="transparent" h={{ base: "13vh", md: "0vh" }} />
             <Center

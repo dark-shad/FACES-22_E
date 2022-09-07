@@ -232,6 +232,7 @@ export default function Profile(props) {
           h={{ base: "auto", lg: "130vh" }}
           w={"100vw"}
           flexDir={"column"}
+          className="mobileBg"
         >
           <div className="profileEditDiv" >
           <Center bg="transparent" h={{ base: "13vh", md: "15vh" }}/>

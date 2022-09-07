@@ -21,6 +21,7 @@ export default function Background({ pageName }) {
           h="100vh"
           w="100%"
           id="background-image"
+          className="mobileBg"
         />
       )}
       {pageName == "Events" && (
@@ -36,6 +37,7 @@ export default function Background({ pageName }) {
           h="100vh"
           w="100%"
           id="background-image"
+          className="mobileBg"
         />
       )}
       {pageName == "Login" && (
@@ -51,6 +53,7 @@ export default function Background({ pageName }) {
           h="100vh"
           w="100%"
           id="background-image"
+          className="mobileBg"
         />
       )}
     </>
