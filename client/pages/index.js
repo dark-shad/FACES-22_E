@@ -104,7 +104,7 @@ export default function Home(props) {
             w="100%"
             mt={{ base: "240px", md: "0", lg: "0" }}
           >
-            <Box w="80%">
+            {/* <Box w="80%"> */}
               {/* {!over ? (
                 <Text
                   color={"purple.400"}
@@ -131,7 +131,7 @@ export default function Home(props) {
               >
                 Registrations closed!
               </Text> */}
-            </Box>
+            {/* </Box> */}
           </Center>
         </Flex>
         {/* <DroneEvent /> */}

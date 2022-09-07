@@ -185,6 +185,7 @@ export default function Events(props) {
           name="description"
           content="Here is the list of events for this year"
         />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"></meta>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <Background pageName={"Events"} />

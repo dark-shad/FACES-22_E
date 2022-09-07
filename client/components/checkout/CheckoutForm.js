@@ -87,7 +87,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
     setIsBtnLoading(true);
     if (transactionId.trim().length < 5) {
       toast({
-        title: "Please Enter a valid Transaction ID",
+        title: "Please Enter a valid Roll number",
         status: "error",
         duration: 3000,
         position: "top-right",
@@ -286,7 +286,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
           </SlideFade> */}
         </Flex>
       </SlideFade>
-      <PaymentModal payment={payment} />
+      {/* <PaymentModal payment={payment} />
       <Flex>
         <Button
           isFullWidth
@@ -306,16 +306,16 @@ export default function CheckoutForm({ participations, user, setEvents }) {
         >
           Show Payment Details
         </Button>
-      </Flex>
+      </Flex> */}
 
       <Text transition={"all 0.2s ease"} color="gray.600" fontSize={"16pt"}>
-        Enter Transaction ID
+        Enter your Roll number
       </Text>
       <Input
         mb="2"
         variant={"filled"}
         name="transactionId"
-        placeholder="Enter transaction Id"
+        placeholder="Enter your Roll numberd"
         borderRadius="10px"
         _focus={{
           bg: "purple.100",

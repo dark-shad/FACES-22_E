@@ -40,9 +40,9 @@ export default function Login(props) {
           >
             <TabList>
               <Tab
-                _selected={{ color: "white", bg: "#fcc0cb" }}
+                _selected={{ color: "white", bg: "purple.800" }}
                 fontSize={"xl"}
-                color="purple.400"
+                color="purple.800"
                 _focus={{ outline: "none!important" }}
                 
               >

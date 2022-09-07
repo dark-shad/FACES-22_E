@@ -6,7 +6,8 @@
 }
 
 .petal {
-  background: url(https://github.com/dark-shad/etamax_imagaes/blob/main/hoja-removebg-preview1.png?raw=true) no-repeat;
+  display: none;
+  /* background: url(https://github.com/dark-shad/etamax_imagaes/blob/main/hoja-removebg-preview1.png?raw=true) no-repeat; */
 }
 .petal.petal-style1 {
   width: 100px;
@@ -34,6 +35,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  position:fixed;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -82,6 +84,8 @@ body::-webkit-scrollbar-track {
 }
 .footerLine{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   
 }
 /* .section::-webkit-scrollbar-thumb {
