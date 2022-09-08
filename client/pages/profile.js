@@ -237,7 +237,7 @@ export default function Profile(props) {
           <div className="profileEditDiv" >
           <Center bg="transparent" h={{ base: "13vh", md: "15vh" }}/>
           <Stack align={"center"}>
-            <Heading fontSize={"4xl"} textAlign={"center"} color="#805D93">
+            <Heading fontSize={"4xl"} textAlign={"center"} color="purple.900">
               Profile
             </Heading>
             {/* <Text fontSize={"2xl"} color={"purple.500"}>

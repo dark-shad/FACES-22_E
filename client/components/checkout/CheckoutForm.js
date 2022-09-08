@@ -213,7 +213,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
       flexDir={"column"}
       gridGap={"1"}
     >
-      <Text fontSize={{ base: "25pt", md: "35pt" }} color="gray.700">
+      <Text fontSize={{ base: "25pt", md: "35pt" }} color="purple.900">
         Checkout
       </Text>
       <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>

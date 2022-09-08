@@ -10,7 +10,7 @@ export default function EventsList(props) {
       p="15px"
       flexDir={"column"}
     >
-      <Text fontSize={{ base: "25pt", md: "35pt" }} color="gray.700">
+      <Text fontSize={{ base: "25pt", md: "35pt" }} color="purple.900">
         Events
       </Text>
       <Flex
