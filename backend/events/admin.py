@@ -30,7 +30,7 @@ class SeatsFilterList(admin.SimpleListFilter):
 
 @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
-  search_fields = ('part_id', 'team_name', 'transaction__upi_transaction_id', 'transaction__transaction_id', 'members__name', 'members__roll_no', 'members__email', 'event__title')
+  search_fields = ('title', 'team_name')
   list_display = ['event_code', 'day', 'start', 'end', 'title']
   list_filter = ('is_featured',)
 
