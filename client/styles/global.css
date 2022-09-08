@@ -121,7 +121,10 @@ body::-webkit-scrollbar-track {
   }
   .mobileBg{
     content:url("https://github.com/dark-shad/etamax_imagaes/blob/main/udaan%20fone.png?raw=true") !important;
-
+    z-index: -2;
+  }
+  .css-1xl3hdo{
+    background-image: url("https://github.com/dark-shad/etamax_imagaes/blob/main/udaan%20fone.png?raw=true") !important;
   }
 }
 .box1Checkout{

@@ -6,6 +6,7 @@ import { Center } from "@chakra-ui/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import * as cookie from "cookie";
+import Background from "../components/misc/Background";
 
 export default function Checkout() {
   const [events, setEvents] = useState([]);
@@ -36,17 +37,20 @@ export default function Checkout() {
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <Layout>
+      <Background pageName={"Home"} />
         {user && (
+          
           <Center
-            backgroundImage={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
+            // backgroundImage={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
             backgroundRepeat={"no-repeat"}
             objectFit="cover"
             backgroundPosition="center"
             backgroundSize="cover"
+            minH="100vh"
             h={{ base: "auto", lg: "auto" }}
             w={"100vw"}
             flexDir={"column"}
-            className="mobileBg"
+            // className="mobileBg"
           >
             <Center bg="transparent" h={{ base: "13vh", md: "0vh" }} />
             <Center
