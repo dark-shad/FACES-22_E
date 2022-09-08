@@ -28,7 +28,7 @@ OTP_VERIFY_SECRET = os.getenv("OTP_VERIFY_SECRET", "BRUH")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.getenv('DJANGO_DEBUG') == 'False' else True 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'etamax.fcrit.ac.in', 'etamax22.herokuapp.com', os.getenv("PUBLIC_IP", "localhost")]
+ALLOWED_HOSTS = ['127.0.0.1', 'etamax.fcrit.ac.in','faces.fcrit.ac.in','122.200.18.86','etamax22.herokuapp.com', os.getenv("PUBLIC_IP", "localhost")]
 
 # Application definition
 

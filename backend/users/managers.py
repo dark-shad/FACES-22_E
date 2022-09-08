@@ -61,26 +61,27 @@ class UserManager(BaseUserManager):
 
 
   def create_superuser(self,roll_no, email, password, **extra_fields):
-    extra_fields.setdefault('is_staff', False)
-    extra_fields.setdefault('is_superuser', False)
+    extra_fields.setdefault('is_staff', True)
+    extra_fields.setdefault('is_superuser', True)
     extra_fields.setdefault('is_active', True)
-    import csv
-    with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
-      spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-      for row in spamreader:          
-          row.pop(6)
-          print(row)
-          [name, roll_no, email, department, semester,password] = row
-          roll_no = roll_no.replace(',','')
-          roll_no = roll_no.replace(' ','')
-          semester = semester.replace(',','')
-          semester = semester.replace(' ','')
-          password = password.replace(',','')
-          password = password.replace(' ','')
-          department = department.replace(',','')
-          department = department.replace(' ','')
-          email = email.replace(',','')
-          email = email.replace(' ','')
-          name = name.replace(',','')
-          self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)    
-    return self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
+    # import csv
+    # with open(r'/home/karishma/Documents/facess_website/new/FACES-22_E/backend/users/data.csv', newline='') as csvfile:
+    #   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+    #   for row in spamreader:          
+    #       row.pop(6)
+    #       print(row)
+    #       [name, roll_no, email, department, semester,password] = row
+    #       roll_no = roll_no.replace(',','')
+    #       roll_no = roll_no.replace(' ','')
+    #       semester = semester.replace(',','')
+    #       semester = semester.replace(' ','')
+    #       password = password.replace(',','')
+    #       password = password.replace(' ','')
+    #       department = department.replace(',','')
+    #       department = department.replace(' ','')
+    #       email = email.replace(',','')
+    #       email = email.replace(' ','')
+    #       name = name.replace(',','')
+    #       self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)    
+    # return self.create_user_bulk(name,roll_no, email,semester,department, password,**extra_fields)
+    return self.create_user(roll_no, email, password,**extra_fields)
