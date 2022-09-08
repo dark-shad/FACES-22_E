@@ -31,7 +31,7 @@ export default function EventCard({ event }) {
   const [alertOpen, setAlertOpen] = useState(false);
   const [alertContent, setAlertContent] = useState("");
   const toast = useToast();
-
+  
   useEffect(() => {
     let newIsRegistered = false;
     let userJSON = localStorage.getItem("eta_user");

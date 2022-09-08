@@ -73,7 +73,7 @@ export default function EventCard({ event }) {
                   }}
                   transition="all 0.2s ease"
                 >
-                  {event.start} - {event.end}
+                  {event.start} - {event.end}Hello
                 </Text>
               </Box>
             </Flex>
