@@ -138,36 +138,39 @@ const LoginForm = () => {
       minH={"80vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("purple.100", "purple.800")}
+      bg={useColorModeValue("pink.800")}
       w="100%"
       borderRadius={"10px"}
       flexDir="column"
+      className="box1Checkout"
     >
       <Stack w="100%" spacing={6} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading color="purple.600" fontSize={"3xl"}>
+          <Heading color="yellow.700" fontSize={"3xl"}>
             Credentials are sent via email
           </Heading>
-          <Text color={"purple.500"} fontSize={"xl"}>
+          <Text color={"yellow.600"} fontSize={"xl"}>
             *check spam folder if not in inbox
           </Text>
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("purple.50", "gray.700")}
+          bg={useColorModeValue("black.50", "black.700")}
           boxShadow={"lg"}
           p={8}
           w="100%"
         >
           <Stack spacing={4}>
             <FormControl isRequired>
-              <FormLabel>Roll Number</FormLabel>
+              <FormLabel color="black">Roll Number</FormLabel>
               <Input
                 placeholder="Enter roll number/ registration number"
                 type="number"
                 name="roll_no"
                 value={values.roll_no}
                 onChange={handleChange}
+                borderColor= "purple.400"
+                color={"black.800"}
                 _focus={{
                   outline: "none",
                   borderColor: "purple.400",
@@ -180,7 +183,7 @@ const LoginForm = () => {
               />
             </FormControl>
             <FormControl isRequired>
-              <FormLabel>Password</FormLabel>
+              <FormLabel color="black" borderColor= "purple.400" >Password</FormLabel>
               <InputGroup>
                 <Input
                   pr="4.5rem"
@@ -188,11 +191,13 @@ const LoginForm = () => {
                   type={showPassword ? "text" : "password"}
                   value={values.password}
                   onChange={handleChange}
+                  
                   onKeyPress={(e) => {
                     if (e.key === "Enter") {
                       handleSubmit();
                     }
                   }}
+                  borderColor= "purple.400"
                   placeholder="Enter your password"
                   _focus={{
                     outline: "none",
@@ -218,10 +223,10 @@ const LoginForm = () => {
             <Stack spacing={10}>
               <Button
                 size="lg"
-                bg={"purple.400"}
+                bg={"purple.800"}
                 color={"white"}
                 _hover={{
-                  bg: "purple.500",
+                  bg: "purple.900",
                 }}
                 isLoading={isLoading}
                 isDisabled={isLoading}
@@ -233,7 +238,7 @@ const LoginForm = () => {
           </Stack>
         </Box>
       </Stack>
-      <Text color="purple.500">
+      <Text color="purple.900">
         Need help with login ?{" "}
         <b>
           <NextLink href="/contact-council">Click here</NextLink>

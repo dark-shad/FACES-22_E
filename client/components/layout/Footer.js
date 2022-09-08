@@ -21,7 +21,7 @@ export default function Footer() {
           textAlign={["center", "unset", "unset", "unset"]}
           noOfLines={2}
           flex={2}
-          color="purple.400"
+          color="purple.900"
           
         >
           <h1 className="footerLine">

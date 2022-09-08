@@ -6,7 +6,8 @@
 }
 
 .petal {
-  background: url(https://github.com/dark-shad/etamax_imagaes/blob/main/hoja-removebg-preview1.png?raw=true) no-repeat;
+  display: none;
+  /* background: url(https://github.com/dark-shad/etamax_imagaes/blob/main/hoja-removebg-preview1.png?raw=true) no-repeat; */
 }
 .petal.petal-style1 {
   width: 100px;
@@ -34,11 +35,12 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  position:fixed;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #ff8ba0;
+  background: #7A5980;
   /* border: 6px solid rgba(0,0,0,0.2); */
 }
 
@@ -53,7 +55,7 @@ body {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #ff8ba0;
+  background: #7A5980;
 }
 
 body::-webkit-scrollbar {
@@ -82,6 +84,8 @@ body::-webkit-scrollbar-track {
 }
 .footerLine{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   
 }
 /* .section::-webkit-scrollbar-thumb {
@@ -89,26 +93,6 @@ body::-webkit-scrollbar-track {
   border-radius: 100px;
 } */
 
-
-
-#plane{
-  width: 18rem;
-  height: 18rem;
-  position: relative;
-  animation-name: example;
-  animation-duration: 10s;
-  animation: example 5s linear 0s infinite ;
-
-}
-
-@keyframes example {
-  100%   { left:100vw; top:0;}
- 
-  50% { left:0; top:48vh;}
-
-  0% { left:-50vw; top:48vh;}
-
-}
 
 @media screen and (max-width: 768px) {
   html::-webkit-scrollbar {
@@ -135,14 +119,12 @@ body::-webkit-scrollbar-track {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
-  @keyframes example {
-    100%   { left:100vw; top:0;}
-   
-    50% { left:0; top:45vh;}
-  
-    0% { left:-50vw; top:45vh;}
-  
+  .mobileBg{
+    content:url("https://github.com/dark-shad/etamax_imagaes/blob/main/udaan%20fone.png?raw=true") !important;
+    z-index: -2;
+  }
+  .css-1xl3hdo{
+    background-image: url("https://github.com/dark-shad/etamax_imagaes/blob/main/udaan%20fone.png?raw=true") !important;
   }
 }
 .box1Checkout{

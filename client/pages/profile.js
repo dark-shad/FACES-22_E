@@ -219,25 +219,25 @@ export default function Profile(props) {
       </Head>
       <style jsx>{`
         div {
-          margin-top: 4rem;
+          margin-top: 2rem;
         }
         
       `}</style>
       <Layout scrollYVar={80}>
         <Background pageName={"Home"} />
         <Center
-          backgroundImage={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
-          backgroundSize={"cover"}
-          backgroundPosition={"center"}
+          // backgroundImage={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
+          
           backgroundRepeat={"no-repeat"}
           h={{ base: "auto", lg: "130vh" }}
           w={"100vw"}
           flexDir={"column"}
+          // className="mobileBg"
         >
           <div className="profileEditDiv" >
           <Center bg="transparent" h={{ base: "13vh", md: "15vh" }}/>
           <Stack align={"center"}>
-            <Heading fontSize={"4xl"} textAlign={"center"} color="purple.500">
+            <Heading fontSize={"4xl"} textAlign={"center"} color="#805D93">
               Profile
             </Heading>
             {/* <Text fontSize={"2xl"} color={"purple.500"}>
@@ -335,7 +335,12 @@ export default function Profile(props) {
                   <FormControl id="password" isRequired>
                     <FormLabel>Department</FormLabel>
                     <Flex wrap="wrap">
-                        <Button colorScheme='blue'>{profile.department}</Button>
+                        <Button 
+                        bg="purple.800"
+                        color="white"
+                        _hover={{
+                        bg: "purple.500",
+                      }}>{profile.department}</Button>
                     </Flex>
                   </FormControl>
                   <FormControl id="password" isRequired>

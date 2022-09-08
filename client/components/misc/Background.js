@@ -11,7 +11,7 @@ export default function Background({ pageName }) {
       {pageName == "Home" && (
         <Box
           as="img"
-          src={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
+          src={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
           alt={"Background test"}
           position="fixed"
           zIndex="-2"
@@ -21,12 +21,13 @@ export default function Background({ pageName }) {
           h="100vh"
           w="100%"
           id="background-image"
+          className="mobileBg"
         />
       )}
       {pageName == "Events" && (
         <Box
           as="img"
-          src={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
+          src={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
           alt={"Background test"}
           position="fixed"
           zIndex="-2"
@@ -36,12 +37,13 @@ export default function Background({ pageName }) {
           h="100vh"
           w="100%"
           id="background-image"
+          className="mobileBg"
         />
       )}
       {pageName == "Login" && (
         <Box
           as="img"
-          src={"https://raw.githubusercontent.com/dark-shad/etamax_imagaes/3b3f990ef802863785afe155daf84ab24333594e/bgImg.svg"}
+          src={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
           alt={"Background test"}
           position="fixed"
           zIndex="-2"
@@ -51,6 +53,7 @@ export default function Background({ pageName }) {
           h="100vh"
           w="100%"
           id="background-image"
+          className="mobileBg"
         />
       )}
     </>

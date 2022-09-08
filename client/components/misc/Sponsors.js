@@ -40,7 +40,7 @@ const Sponsors = () => {
     >
       <Flex w={["90%", "90%", "90%", "90%"]} flexDir={"column"}>
         <Box my={5}>
-          <Heading color="white" fontSize={["3xl", "4xl", "5xl", "5xl"]}>
+          <Heading color="purple.700" fontSize={["3xl", "4xl", "5xl", "5xl"]}>
             Our Sponsors
           </Heading>
         </Box>
