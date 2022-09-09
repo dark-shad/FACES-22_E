@@ -9,7 +9,7 @@ const DroneEvent = () => {
     <Box
       w={["100%", "80%", "48%", "40%"]}
       p={3}
-      bg="#fcc0cb"
+      bg="#7A5980"
       position="absolute"
       right="0"
       top="calc(70vh - 100px)"
@@ -21,16 +21,22 @@ const DroneEvent = () => {
       // h={["100px", "150px", "200px", "150px"]}
       // h="150px"
       gridGap={3}
-      opacity="0.75"
+      opacity="0.95"
     >
       <Box display="flex" alignItems={"center"} flex="0.3">
-        <Image h="120px" src="/assets/drone.svg" />
+        <Image h="120px" src={"https://github.com/dark-shad/etamax_imagaes/blob/main/WhatsApp%20Image%202022-09-09%20at%202.38.33%20PM.jpeg?raw=true"} />
       </Box>
       <Flex flex="0.7" flexDir="column" gridGap={2}>
-        <Heading fontSize={{ base: "xl", lg: "3xl" }}>Drone Event!!</Heading>
+        <Heading fontSize={{ base: "xl", lg: "3xl" }}>FUN FAIR!!</Heading>
         <Text fontSize={["sm", "md", "lg", "lg"]}>
-          This event is conducted in association with the Indian drone racing
-          league which is INDIA’s largest drone racing league. Check it out now!
+          A fun fair full of mini games. It's a pay and play event.
+          <br></br>
+          Entry fee : 20 per game
+          <br></br>
+          Timing: 12:00PM to 04:00PM 
+          <br></br>        
+          Winners will be given exciting gifts and prizes.
+
         </Text>
       </Flex>
       <Flex alignSelf={"center"}>

@@ -194,7 +194,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
             >
               <MenuItems
                 isDisabled={false}
-                color={color}
+                color={'white'}
                 to="/"
                 nextLink={true}
               >
@@ -202,7 +202,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
               </MenuItems>
               <MenuItems
                 isDisabled={false}
-                color={color}
+                color={'white'}
                 to="/events"
                 nextLink={true}
               >
@@ -211,7 +211,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
               {!loggedIn && (
                 <MenuItems
                   isDisabled={false}
-                  color={color}
+                  color={'white'}
                   to="/login"
                   nextLink={false}
                 >
@@ -221,7 +221,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
               {loggedIn && (
                 <MenuItems
                   isDisabled={false}
-                  color={color}
+                  color={'white'}
                   to="/profile"
                   nextLink={false}
                 >
@@ -231,7 +231,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
               {loggedIn && (
                 <MenuItems
                   isDisabled={false}
-                  color={color}
+                  color={'white'}
                   to="/checkout"
                   nextLink={false}
                 >
@@ -244,7 +244,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
               {loggedIn && (
                 <Button
                   bg="transparent"
-                  color={color}
+                  color={'white'}
                   fontWeight="medium"
                   size={"lg"}
                   _focus={{
