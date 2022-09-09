@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <Flex
       as="footer"
-      bg="pink.100"
+      bg="purple.100"
       w="100%"
       h={{ md: "7vh" }}
       py="20px"
@@ -21,41 +21,46 @@ export default function Footer() {
           textAlign={["center", "unset", "unset", "unset"]}
           noOfLines={2}
           flex={2}
-          color="pink.400"
+          color="purple.900"
+          
         >
-          Developed by{" "}
-          <Link target="_blank" href="https://github.com/theabbie">
-            Abhishek
+          <h1 className="footerLine">
+
+         
+          With &nbsp;<img src=".\heart.svg" width={'10px'} height={'10px'}></img>&nbsp; by&nbsp;
+          <Link target="_blank" href="https://github.com/karishmarajput">
+            Karishma
           </Link>
-          ,{" "}
-          <Link target="_blank" href="https://www.adiunni.tech/">
-            Aditya
+          ,&nbsp;
+          <Link target="_blank" href="https://github.com/Pauloper1">
+            Crescent
           </Link>
-          ,{" "}
-          <Link target="_blank" href="https://github.com/rgab1508">
-            Gabriel
+          ,&nbsp;
+          <Link target="_blank" href="https://github.com/Aaryan246">
+            Aaryan
           </Link>
-          ,{" "}
-          <Link target="_blank" href="https://github.com/dcostat04">
-            Trevor
+          ,&nbsp;
+          <Link target="_blank" href="https://github.com/dark-shad">
+            Pratik
           </Link>
-          ,{" "}
+          ,&nbsp;
           <Link
             target="_blank"
-            href="https://www.linkedin.com/in/anushka-amte-210253195/"
+            href="https://github.com/VinayakPatkar"
           >
-            Anushka
-          </Link>{" "}
-          &{" "}
-          <Link target="_blank" href="https://www.linkedin.com/in/elishagras/">
-            Elisha
+            Vinayak
+          </Link>&nbsp;
+          &&nbsp;
+          <Link target="_blank" href="https://github.com/joel122002">
+            Joel
           </Link>
+          </h1>
         </Text>
         <Text
           flex={1}
           as="a"
           href={"https://fcrit.ac.in"}
-          color="pink.500"
+          color="purple.500"
           textAlign={["center", "end", "end", "end"]}
         >
           F.C.R.I.T

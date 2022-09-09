@@ -24,18 +24,18 @@ export default function Component({
       transition="all 0.3s"
       backgroundPosition="center"
       _hover={{
-        bgColor: `pink.100`,
-        bgGradient: `radial(circle, transparent 1%, pink.${step2} 1%)`,
+        bgColor: `purple.100`,
+        bgGradient: `radial(circle, transparent 1%, purple.${step2} 1%)`,
         bgPos: "center",
         backgroundSize: "15000%",
-        color: "pink.300",
+        color: "purple.300",
         outline: "none",
       }}
       _active={{
-        bgColor: `pink.200`,
+        bgColor: `purple.200`,
         backgroundSize: "100%",
         transition: "background 0s",
-        color: "pink.500",
+        color: "purple.500",
         outline: "none",
       }}
       onClick={() => {

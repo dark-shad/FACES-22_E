@@ -51,9 +51,9 @@ function RadioCard(props) {
         borderRadius="md"
         boxShadow="md"
         _checked={{
-          bg: "pink.400",
+          bg: "purple.400",
           color: "white",
-          borderColor: "pink.600",
+          borderColor: "purple.600",
         }}
         _focus={{
           boxShadow: "outline",
@@ -96,7 +96,7 @@ export default function Profile(props) {
 
   
   if (!firebase.apps.length) {
-    console.log(process.env.NEXT_PUBLIC_FIREBASE)
+    // console.log(process.env.NEXT_PUBLIC_FIREBASE)
     firebase.initializeApp(JSON.parse(process.env.NEXT_PUBLIC_FIREBASE));
   } else {
     firebase.app();
@@ -214,29 +214,37 @@ export default function Profile(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22 | Profile</title>
+        <title>FACES-22 | Profile</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
+      <style jsx>{`
+        div {
+          margin-top: 2rem;
+        }
+        
+      `}</style>
       <Layout scrollYVar={80}>
         <Background pageName={"Home"} />
         <Center
-          backgroundImage={"assets/checkout.svg"}
-          backgroundSize={"cover"}
-          backgroundPosition={"center"}
+          // backgroundImage={"https://github.com/dark-shad/etamax_imagaes/blob/main/Udaan.png?raw=true"}
+          
           backgroundRepeat={"no-repeat"}
           h={{ base: "auto", lg: "130vh" }}
           w={"100vw"}
           flexDir={"column"}
+          // className="mobileBg"
         >
-          <Center bg="transparent" h={{ base: "13vh", md: "15vh" }} />
+          <div className="profileEditDiv" >
+          <Center bg="transparent" h={{ base: "13vh", md: "15vh" }}/>
           <Stack align={"center"}>
-            <Heading fontSize={"4xl"} textAlign={"center"} color="pink.500">
-              Edit Profile
+            <Heading fontSize={"4xl"} textAlign={"center"} color="#805D93">
+              Profile
             </Heading>
-            <Text fontSize={"2xl"} color={"pink.500"}>
+            {/* <Text fontSize={"2xl"} color={"purple.500"}>
               to participate in all events ✌️
-            </Text>
+            </Text> */}
           </Stack>
+          </div>
           <Center
             w={{ base: "97%", lg: "90%" }}
             h={{ base: "95%", lg: "90%" }}
@@ -250,8 +258,9 @@ export default function Profile(props) {
               h="99%"
               p="10px"
               flexDir={"column"}
+              
             >
-              <Box rounded={"lg"} bg="white" boxShadow={"lg"} p={8}>
+              <Box rounded={"lg"} bg="white" boxShadow={"lg"} p={8} className="box1Checkout">
                 <Stack spacing={4}>
                   <Flex align="center">
                     <Avatar
@@ -274,11 +283,14 @@ export default function Profile(props) {
                       }}
                     />
                     <Button
-                      bg="pink.400"
+                      bg="purple.800"
                       onClick={randomAvatar}
                       m={2}
                       ml={5}
                       color="white"
+                      _hover={{
+                        bg: "purple.500",
+                      }}
                     >
                       SHUFFLE
                     </Button>
@@ -323,24 +335,24 @@ export default function Profile(props) {
                   <FormControl id="password" isRequired>
                     <FormLabel>Department</FormLabel>
                     <Flex wrap="wrap">
-                      {departments.map((value) => {
-                        const radio = getRadioProps({ value });
-                        return (
-                          <RadioCard key={value} {...radio}>
-                            {value}
-                          </RadioCard>
-                        );
-                      })}
+                        <Button 
+                        bg="purple.800"
+                        color="white"
+                        _hover={{
+                        bg: "purple.500",
+                      }}>{profile.department}</Button>
                     </Flex>
                   </FormControl>
                   <FormControl id="password" isRequired>
                     <FormLabel>Semester</FormLabel>
                     <Select
                       placeholder="Select Semester"
+                      // readOnly or disabled -> which one to choose ?
                       readOnly
                       value={profile.semester}
+                      
                     >
-                      {[1, 2, 3, 4, 6, 7, 8].map((sem) => (
+                      {[1, 3, 5, 7].map((sem) => (
                         <option key={sem} value={sem}>
                           Semester {sem}
                         </option>
@@ -379,7 +391,7 @@ export default function Profile(props) {
                       </InputRightElement>
                     </InputGroup>
                     {editPhone && (
-                      <Button bg="pink.400" onClick={login} m={2} color="white">
+                      <Button bg="purple.400" onClick={login} m={2} color="white">
                         Verify OTP
                       </Button>
                     )}
@@ -398,7 +410,7 @@ export default function Profile(props) {
                       />
                       <Button
                         onClick={verifyOTP}
-                        bg={"pink.400"}
+                        bg={"purple.400"}
                         m={3}
                         color="white"
                       >
@@ -410,11 +422,11 @@ export default function Profile(props) {
                     <Button
                       loadingText="Submitting"
                       size="lg"
-                      bg={"pink.400"}
+                      bg={"purple.800"}
                       color={"white"}
                       onClick={updateProfile}
                       _hover={{
-                        bg: "blue.500",
+                        bg: "purple.500",
                       }}
                     >
                       Save Profile
@@ -430,6 +442,7 @@ export default function Profile(props) {
               h="96%"
               p="10px"
               flexDir={"column"}
+              className="box1Checkout"
             >
               <EventsList
                 events={profile.participations.filter((p) => p.transaction)}

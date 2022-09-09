@@ -7,12 +7,12 @@ const FooterOnTopOfFooter = () => {
       display={"flex"}
       h="40px"
       w="100%"
-      bg="pink.200"
+      bg="purple.200"
       justifyContent={"center"}
       alignItems={"center"}
       gridGap="2"
     >
-      <Text color="pink.500">In loving memory of Myron Savio Castellino.</Text>
+      <Text color="purple.500"></Text>
     </Box>
   );
 };

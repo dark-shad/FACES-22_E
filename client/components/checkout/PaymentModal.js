@@ -61,7 +61,7 @@ export default function PaymentModal({ payment }) {
         </AlertDialogBody>
         <AlertDialogFooter>
           <Button
-            bg="pink.300"
+            bg="purple.300"
             color="white"
             _hover={{ opacity: 0.7 }}
             onClick={payment.onClose}

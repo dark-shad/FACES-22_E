@@ -179,12 +179,13 @@ export default function Events(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22 | Events</title>
-        <meta name="ETAMAX-22" content="Events" />
+        <title>FACES-22 | Events</title>
+        <meta name="FACES-22" content="Events" />
         <meta
           name="description"
           content="Here is the list of events for this year"
         />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"></meta>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <Background pageName={"Events"} />
@@ -195,22 +196,24 @@ export default function Events(props) {
           h="auto"
           w="100vw"
           maxW="100vw"
+          className="box1Checkout"
         >
           <Flex
             maxW="100vw"
             flexDirection="column"
-            h={{ base: "120vh", md: "100vh" }}
+            h={{ base: "110vh", md: "100vh" }}
           >
             <Center
               h={{ base: "110vh", md: "100vh" }}
               w="100%"
               flexDir={"column"}
+            
             >
               <Box w="80%">
-                <Heading color="pink.300" fontSize="6xl">
-                  ETAMAX-22{" "}
+                <Heading color="purple.800" fontSize="6xl">
+                  FACES-22{" "}
                   <Text fontSize="8xl" fontFamily="Birthstone Bounce">
-                    Fleur
+                    Udaan
                   </Text>
                 </Heading>
               </Box>
@@ -218,30 +221,33 @@ export default function Events(props) {
                 <Text
                   fontSize={{ base: "xl", md: "3xl" }}
                   fontWeight={"normal"}
-                  color="pink.400"
+                  color="black.800"
+                  
                 >
-                  ETAMAX offers you a variety of events to choose from. Feel
-                  free to pick any event of your choice from Technical, Cultural
-                  and Sports (Only for FCRIT students), but make sure you follow
-                  the registration criteria.
+                  FACES offers you a variety of events to choose from. Feel free
+                  to pick any event of your choice from Cultural and
+                  Sports.
                 </Text>
               </Box>
             </Center>
           </Flex>
           <Center w="100%" gridGap={"3"}>
+            
             <Center w={{ base: "95%", lg: "50%" }} gridGap={3}>
               <Select
                 value={catSelect}
                 onChange={(e) => setCatSelect(e.target.value)}
                 placeholder="Select Category"
+                borderColor= "black.800"
                 _focus={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "black.800",
+                  borderColor: "black.800",
                 }}
                 _hover={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "black.800",
+                  borderColor: "black.800",
                 }}
+                
               >
                 {/* <option value="T">Technical</option> */}
                 <option value="C">Cultural</option>
@@ -251,13 +257,14 @@ export default function Events(props) {
                 value={daySelect}
                 onChange={(e) => setDaySelect(e.target.value)}
                 placeholder="Select Day"
+                borderColor= "black.800"
                 _focus={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "black.800",
+                  borderColor: "black.800",
                 }}
                 _hover={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "black.800",
+                  borderColor: "black.800",
                 }}
               >
                 <option value="1">Day 1</option>
@@ -266,12 +273,15 @@ export default function Events(props) {
               </Select>
               <Button
                 _focus={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "black.800",
+                  borderColor: "black.800",
                 }}
+               
+                borderColor= "black.800"
                 _hover={{
-                  color: "pink.500",
-                  borderColor: "pink.500",
+                  color: "white",
+                  borderColor: "black.800",
+                  backgroundColor: "purple.800"
                 }}
                 variant="outline"
                 fontWeight={"normal"}

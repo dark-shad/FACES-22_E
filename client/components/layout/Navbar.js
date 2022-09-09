@@ -37,7 +37,7 @@ function Logo({ visible, ...rest }) {
         fontWeight="bolder"
         color="white"
       >
-        {visible ? "ETAMAX - 22" : ""}
+        {visible ? "FACES - 22" : ""}
       </Heading>
     </Center>
   );
@@ -63,7 +63,7 @@ function MenuToggle({ toggle }) {
       color="white"
       display={{ md: "none", base: "block" }}
       onClick={toggle}
-      _focus={{ outline: "none!important", background: "pink.100" }}
+      _focus={{ outline: "none!important", background: "purple.100" }}
       mr={0}
     >
       <svg width="18" height="18" viewBox="0 0 18 18">
@@ -106,7 +106,7 @@ function MenuItems({ children, to, color, nextLink, isDisabled }) {
 }
 
 function DrawerNavbar({ isOpen, scrollyvar }) {
-  const [color, setColor] = useState("pink.400");
+  const [color, setColor] = useState("purple.900");
   const [loggedIn, setLoggedIn] = useState(false);
   const step2 = useColorModeValue("300", "200");
   const toast = useToast();
@@ -122,7 +122,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
       if (window.scrollY > scrollyvar) {
         setColor("white");
       } else {
-        setColor("pink.400");
+        setColor("purple.900");
       }
     });
 
@@ -148,7 +148,7 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
           title: "Error",
           description: "Something went wrong",
           status: "error",
-          duration: 4000,
+          duration: 9000,
           isClosable: true,
           position: "top-right",
         });
@@ -177,11 +177,12 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
       opacity={isOpen ? 1 : 0}
       transition="all 0.22s ease-in-out"
       flexBasis={{ base: "100%", md: "auto" }}
+      
     >
       <Collapse in={isOpen} animateOpacity>
         <Box
           flexBasis={{ base: "100%", md: "auto" }}
-          background={{ base: "pink.100", md: "transparent" }}
+          background={{ base: "purple.100", md: "transparent" }}
           p={{ base: "20px", md: "0px" }}
           borderRadius="15px"
         >
@@ -252,18 +253,18 @@ function DrawerNavbar({ isOpen, scrollyvar }) {
                   transition="all 0.3s"
                   backgroundPosition="center"
                   _hover={{
-                    bgColor: `pink.100`,
-                    bgGradient: `radial(circle, transparent 1%, pink.${step2} 1%)`,
+                    bgColor: `purple.100`,
+                    bgGradient: `radial(circle, transparent 1%, purple.${step2} 1%)`,
                     bgPos: "center",
                     backgroundSize: "15000%",
-                    color: "pink.300",
+                    color: "purple.300",
                     outline: "none",
                   }}
                   _active={{
-                    bgColor: `pink.200`,
+                    bgColor: `purple.200`,
                     backgroundSize: "100%",
                     transition: "background 0s",
-                    color: "pink.500",
+                    color: "purple.500",
                     outline: "none",
                   }}
                   onClick={handleLogout}
@@ -285,7 +286,7 @@ function NavbarContainer({ setVisible, scrollyvar, children, ...rest }) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > scrollyvar) {
-        setBackground("#fcc0cb");
+        setBackground("#7A5980");
       } else {
         setBackground("transparent");
       }

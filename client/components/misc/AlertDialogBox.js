@@ -25,7 +25,7 @@ const AlertDialogBox = ({
         <AlertDialogContent
           ml={2}
           mr={2}
-          color="pink.500"
+          color="purple.500"
           background="linear-gradient(45deg, #e96196 0%, #ffffff 74%)"
         >
           <AlertDialogBody mt={2} fontWeight="600">
@@ -45,7 +45,7 @@ const AlertDialogBox = ({
           <AlertDialogFooter>
             <Flex direction="row" justifyContent="center" align="center">
               <Button
-                colorScheme="pink"
+                colorScheme="purple"
                 onClick={() => {
                   setOpen(false);
                   if (onClose) onClose();

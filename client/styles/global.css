@@ -6,36 +6,41 @@
 }
 
 .petal {
-  background: url(http://talktofill.surge.sh/cherry-blossom.png) no-repeat;
+  display: none;
+  /* background: url(https://github.com/dark-shad/etamax_imagaes/blob/main/hoja-removebg-preview1.png?raw=true) no-repeat; */
 }
 .petal.petal-style1 {
-  width: 45px;
-  height: 20px;
+  width: 100px;
+  height: 40px;
   background-position: -31px 0;
 }
 .petal.petal-style2 {
-  width: 42px;
-  height: 22px;
+  width: 105px;
+  height: 45px;
   background-position: 0 -23px;
 }
 .petal.petal-style3 {
-  width: 37px;
-  height: 24px;
+  width: 109px;
+  height: 49px;
   background-position: 0 -50px;
 }
 .petal.petal-style4 {
-  width: 26px;
-  height: 34px;
+  width: 100px;
+  height: 44px;
   background-position: -49px -35px;
 }
 
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position:fixed;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #ff8ba0;
+  background: #7A5980;
   /* border: 6px solid rgba(0,0,0,0.2); */
 }
 
@@ -50,7 +55,7 @@ body {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #ff8ba0;
+  background: #7A5980;
 }
 
 body::-webkit-scrollbar {
@@ -77,11 +82,18 @@ body::-webkit-scrollbar-track {
   width: 12px !important;
   height: 12px !important;
 }
-
+.footerLine{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
 /* .section::-webkit-scrollbar-thumb {
   background-color: #d4aa70;
   border-radius: 100px;
 } */
+
+
 @media screen and (max-width: 768px) {
   html::-webkit-scrollbar {
     display: none;
@@ -107,4 +119,21 @@ body::-webkit-scrollbar-track {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  .mobileBg{
+    content:url("https://github.com/dark-shad/etamax_imagaes/blob/main/udaan%20fone.png?raw=true") !important;
+    z-index: -2;
+  }
+  .css-1xl3hdo{
+    background-image: url("https://github.com/dark-shad/etamax_imagaes/blob/main/udaan%20fone.png?raw=true") !important;
+  }
 }
+.box1Checkout{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.28) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.41);
+}
+

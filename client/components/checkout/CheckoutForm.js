@@ -32,12 +32,12 @@ function RadioCard(props) {
       <Box
         {...checkbox}
         cursor="pointer"
-        bg="pink.100"
+        bg="purple.100"
         borderRadius="md"
         boxShadow="md"
         _checked={{
           bg: "linear-gradient(315deg, #e96196 0%, #ffffff 74%)",
-          color: "pink.600",
+          color: "purple.600",
         }}
         _focus={{
           outline: "none!important",
@@ -48,7 +48,7 @@ function RadioCard(props) {
         w={{ base: "auto", lg: "auto" }}
         fontSize={{ base: "13pt", md: "13pt" }}
         transition={"all 0.2s ease"}
-        color="pink.400"
+        color="purple.400"
       >
         {props.children}
       </Box>
@@ -87,7 +87,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
     setIsBtnLoading(true);
     if (transactionId.trim().length < 5) {
       toast({
-        title: "Please Enter a valid Transaction ID",
+        title: "Please Enter a valid Roll number",
         status: "error",
         duration: 3000,
         position: "top-right",
@@ -116,7 +116,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
     if (user.user.is_from_fcrit && (c["C"] < 1 || c["T"] < 1)) {
       toast({
         title:
-          "Criteria Not Satisfied: Atleast 1 Cultural and 1 Technical Event",
+          "Criteria Not Satisfied: Atleast 2 Cultural Event",
         status: "error",
         duration: 3000,
         position: "top-right",
@@ -219,21 +219,21 @@ export default function CheckoutForm({ participations, user, setEvents }) {
       <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Total events:</b> {participations.length}
       </Text>
-      <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
+      {/* <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Event Total:</b> Rs. {eventAmount}
-      </Text>
-      <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
+      </Text> */}
+      {/* <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Donation Amount:</b> Rs. {donation}
-      </Text>
+      </Text> */}
       <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         <b>Total Amount:</b> Rs. {totalAmount}
       </Text>
-      <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
+      {/* <Text color="gray.600" fontSize={{ base: "13pt", md: "16pt" }}>
         Would you like to donate for this event?
-      </Text>
+      </Text> */}
       <SlideFade in={true}>
         <Flex flexDir={"column"} gridGap="4">
-          <Flex wrap="wrap" gridGap={2} {...group}>
+          {/* <Flex wrap="wrap" gridGap={2} {...group}>
             {donateOptions.map((value, index) => {
               const radio = getRadioProps({ value: value });
               return (
@@ -242,7 +242,7 @@ export default function CheckoutForm({ participations, user, setEvents }) {
                 </RadioCard>
               );
             })}
-          </Flex>
+          </Flex> */}
           {/* <SlideFade in={donationOther}>
             <InputGroup>
               <InputLeftAddon children="Rs. " />
@@ -256,8 +256,8 @@ export default function CheckoutForm({ participations, user, setEvents }) {
                 onChange={(e) => setDonationOtherValue(e.target.value)}
                 borderRadius="10px"
                 _focus={{
-                  bg: "pink.100",
-                  color: "pink.600",
+                  bg: "purple.100",
+                  color: "purple.600",
                 }}
               />
               <InputRightElement width="4.5rem">
@@ -286,17 +286,17 @@ export default function CheckoutForm({ participations, user, setEvents }) {
           </SlideFade> */}
         </Flex>
       </SlideFade>
-      <PaymentModal payment={payment} />
+      {/* <PaymentModal payment={payment} />
       <Flex>
         <Button
           isFullWidth
-          // bg="pink.300"
+          // bg="purple.300"
           _focus={{
-            bg: "pink.300",
+            bg: "purple.300",
             color: "white",
           }}
           _hover={{
-            bg: "pink.300",
+            bg: "purple.300",
             color: "white",
           }}
           onClick={() => {
@@ -306,20 +306,20 @@ export default function CheckoutForm({ participations, user, setEvents }) {
         >
           Show Payment Details
         </Button>
-      </Flex>
+      </Flex> */}
 
       <Text transition={"all 0.2s ease"} color="gray.600" fontSize={"16pt"}>
-        Enter Transaction ID
+        Enter your Roll number
       </Text>
       <Input
         mb="2"
         variant={"filled"}
         name="transactionId"
-        placeholder="Enter transaction Id"
+        placeholder="Enter your Roll numberd"
         borderRadius="10px"
         _focus={{
-          bg: "pink.100",
-          color: "pink.600",
+          bg: "purple.100",
+          color: "purple.600",
         }}
         transition={"all 0.2s ease"}
         value={transactionId}

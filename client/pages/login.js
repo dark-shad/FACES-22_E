@@ -21,7 +21,7 @@ export default function Login(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22 | Login</title>
+        <title>FACES-22 | Login</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <Background pageName={"Login"} />
@@ -40,21 +40,22 @@ export default function Login(props) {
           >
             <TabList>
               <Tab
-                _selected={{ color: "white", bg: "#fcc0cb" }}
+                _selected={{ color: "white", bg: "purple.800" }}
                 fontSize={"xl"}
-                color="pink.400"
+                color="purple.800"
                 _focus={{ outline: "none!important" }}
+                
               >
                 Login
               </Tab>
-              <Tab
+              {/* <Tab
                 _selected={{ color: "white", bg: "#fcc0cb" }}
                 fontSize={"xl"}
-                color="pink.400"
+                color="purple.400"
                 _focus={{ outline: "none!important" }}
               >
                 Register
-              </Tab>
+              </Tab> */}
             </TabList>
             <TabPanels>
               <TabPanel>

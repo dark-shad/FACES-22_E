@@ -1,6 +1,6 @@
 import { Box, Center, Heading, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import Flower from "../components/misc/Flower";
+// import Flower from "../components/misc/Flower";
 import { randNum } from "../components/utils/utils";
 import Layout from "../components/layout";
 import Head from "next/head";
@@ -40,24 +40,25 @@ export default function Home(props) {
   });
 
   useEffect(() => {
-    window.addEventListener("mousedown", function(e) {
-      var amt = randNum(1, 3);
-      for (var i = 0; i < amt; i++) {
-        var top = randNum(e.clientY - 30, e.clientY + 30);
-        var left = randNum(e.clientX - 30, e.clientX + 10);
-        var flower = new Flower({
-          top: top,
-          left: left,
-        });
-      }
-    });
+    // window.addEventListener("mousedown", function(e) {
+    //   var amt = randNum(1, 3);
+    //   for (var i = 0; i < amt; i++) {
+    //     var top = randNum(e.clientY - 30, e.clientY + 30);
+    //     var left = randNum(e.clientX - 30, e.clientX + 10);
+    //     var flower = new Flower({
+    //       top: top,
+    //       left: left,
+    //     });
+    //   }
+    // });
 
-    return () => {
-      window.removeEventListener("mousedown", () => {
-        console.log("removed");
-      });
-    };
-  }, []);
+    // return () => {
+    //   window.removeEventListener("mousedown", () => {
+    //     console.log("removed");
+    //   });
+    // };
+  },
+   []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -71,9 +72,9 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>ETAMAX-22</title>
+        <title>FACES-22</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
-        <meta name="title" content="ETAMAX-22" />
+        <meta name="title" content="FACES-22" />
         <meta
           name="description"
           content="Annual sports and cultural festival organised at F.C.R.I.T"
@@ -84,13 +85,16 @@ export default function Home(props) {
         <Flex bg="transparent" h="100vh" maxW="100vw" flexDirection="column">
           <Center h="60vh" w="100%" flexDir={"column"}>
             <Box w="80%">
-              <Heading color="pink.300" fontSize="6xl">
-                ETAMAX-22{" "}
+              {/* <Heading color="purple.300" fontSize="6xl">
+                FACES-22{" "}
                 <Text fontSize="8xl" fontFamily="Birthstone Bounce">
-                  Fleur
+                  Udaan
                 </Text>
-              </Heading>
+              </Heading> */}
             </Box>
+        
+            
+
           </Center>
           <Center
             h={{
@@ -100,10 +104,10 @@ export default function Home(props) {
             w="100%"
             mt={{ base: "240px", md: "0", lg: "0" }}
           >
-            <Box w="80%">
+            {/* <Box w="80%"> */}
               {/* {!over ? (
                 <Text
-                  color={"pink.400"}
+                  color={"purple.400"}
                   fontWeight="bold"
                   fontSize={{ base: "3xl", lg: "4xl" }}
                 >
@@ -113,27 +117,27 @@ export default function Home(props) {
                 ""
               )} */}
               {/* <Text
-                color="pink.300"
+                color="purple.300"
                 fontWeight={"500"}
                 fontSize={{ base: "2xl", lg: "2xl" }}
               >
                 {!over ? `${daysLeft} days left` : "On now!"}
               </Text> */}
-              <Text
+              {/* <Text
                 mt={3}
-                color={"pink.400"}
+                color={"purple.400"}
                 fontWeight={"800"}
                 fontSize={"5xl"}
               >
                 Registrations closed!
-              </Text>
-            </Box>
+              </Text> */}
+            {/* </Box> */}
           </Center>
         </Flex>
-        <DroneEvent />
+        {/* <DroneEvent /> */}
         <FeaturedEvents events={props.events} />
         <Sponsors />
-        <FooterOnTopOfFooter />
+        {/* <FooterOnTopOfFooter /> */}
       </Layout>
     </>
   );

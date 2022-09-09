@@ -34,13 +34,13 @@ const Sponsors = () => {
 
   return (
     <Center
-      bgGradient={"linear(to-b,rgb(252, 193, 203,0.6),#fcc0cb)"}
+      bgGradient={"linear(to-b,rgb(252, 193, 203,0.6),#7A5980)"}
       pt="5"
       pb="10"
     >
       <Flex w={["90%", "90%", "90%", "90%"]} flexDir={"column"}>
         <Box my={5}>
-          <Heading color="white" fontSize={["3xl", "4xl", "5xl", "5xl"]}>
+          <Heading color="purple.700" fontSize={["3xl", "4xl", "5xl", "5xl"]}>
             Our Sponsors
           </Heading>
         </Box>

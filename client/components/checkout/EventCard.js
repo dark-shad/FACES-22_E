@@ -80,7 +80,7 @@ export default function EventCard({
           bg="transparent"
           _hover={{
             bg: "white",
-            color: "pink.300",
+            color: "purple.300",
             width: { base: "50%", md: "70%" },
           }}
           color="white"
@@ -202,12 +202,12 @@ export default function EventCard({
               position={"absolute"}
               _hover={{
                 bg: "white",
-                color: "pink.300",
+                color: "purple.300",
               }}
               _focus={{
                 outline: "none",
                 bg: "white",
-                color: "pink.300",
+                color: "purple.300",
               }}
               px={1}
               py={1}
@@ -239,12 +239,12 @@ export default function EventCard({
               position={"absolute"}
               _hover={{
                 bg: "white",
-                color: "pink.300",
+                color: "purple.300",
               }}
               _focus={{
                 outline: "none",
                 bg: "white",
-                color: "pink.300",
+                color: "purple.300",
               }}
               px={1}
               py={1}
