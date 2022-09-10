@@ -304,7 +304,7 @@ function NavbarContainer({ setVisible, scrollyvar, children, ...rest }) {
       w="100%"
       sx={{ transition: "all 0.2s ease-in-out" }}
       position="fixed"
-      zIndex="5"
+      zIndex="1001"
       boxShadow={
         background != "transparent"
           ? "0px 1px 10px 0px rgb(255 0 200 / 25%)"
