@@ -3,7 +3,7 @@ import { Box, Center, Flex, Heading, Image } from "@chakra-ui/react";
 import Carousal from "./Carousal";
 
 const Sponsors = () => {
-  const bans = [ 4, 14].map((num) => (
+  const bans = [ 4, 15].map((num) => (
     <Image
       borderRadius={"15px"}
       mb={5}
