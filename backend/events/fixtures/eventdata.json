@@ -1,215 +1,933 @@
 [
     {
-        "model":  "events.Event",
-        "fields":{"title":  "Footloose(Duo)",
-        "day":  3,
-        "description":  "Participants are supposed to perform on the stage in front of the judges and aud•They can participate solo and team.•Only branch-wise teams areallowed.•Maximum duration of 3 minutes to be provided to each participant.Maximum capacity of a team is 10 members.",
-        "start":  "01:30:00.170922",
-        "end":  "03:30:00.170922",
-        "max_seats":  "20",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st- 1000 2nd- 500",
-        "team_size":  "1",
-        "is_team_size_strict":"True"
-    }},
+        "model": "events.event",
+        "fields": {
+            "day": "3",
+            "title": "VOLLEYBALL (GIRLS)",
+            "description": "Rules and Regulations:\r\n- Each team consists of 8 players with 6 active players at the time of play and 2 - substitutes.\r\n- The match is played for best of 3 sets for 25 points in each set with rally score.\r\n- Entry per game: 50\r\n- Event Type: Race\r\n- Duration: 1 hour\r\n- Venue : old lawn",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "8",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
     {
-        "model":  "events.Event",
-        "fields":{"title":  "Footloose(Duo)",
-        "day":  3,
-        "description":  "Participants are supposed to perform on the stage in front of the judges and aud•They can participate solo and team.•Only branch-wise teams areallowed.•Maximum duration of 3 minutes to be provided to each participant.Maximum capacity of a team is 10 members.",
-        "start":  "01:30:00.170922",
-        "end":  "03:30:00.170922",
-        "max_seats":  "8",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st- 1000 2nd- 500",
-        "team_size":  "2",
-        "is_team_size_strict":"True"
-    }},
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "TUG OF WAR (BOYS)",
+            "description": "- Tug of war is a popular sport with comparatively lesser requirements than other - sports. It also received positive feedback from the students and is a short yet adrenaline filled sport which tests a team\u0027s strength and strategy planning abilities.\r\n- Rules and Regulations:\r\n- Branch wise competition.\r\n- Only one team per branch 10 playing (1 substitute)\r\n- Referee�s decision will be final\r\n- Entry fees: 1000 per team\r\n- Event Type: Tournament\r\n- Duration: 1 hour\r\n- Venue : Balbhavan road",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "11",
+            "is_team_size_strict": true,
+            "entry_fee": "1000",
+            "prize_money": "0"
+        }
+    },
     {
-        "model":  "events.Event",
-        "fields":{"title":  "Footloose(Duo)",
-        "day":  3,
-        "description":  "Participants are supposed to perform on the stage in front of the judges and aud•They can participate solo and team.•Only branch-wise teams areallowed.•Maximum duration of 3 minutes to be provided to each participant.Maximum capacity of a team is 10 members.",
-        "start":  "01:30:00.170922",
-        "end":  "03:30:00.170922",
-        "max_seats":  "8",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st- 1000 2nd- 500",
-        "team_size":  "4",
-        "is_team_size_strict":"True"
-    }},
-  {
-        "model":  "events.Event",
-        "fields":{"title":  " Pitch Perfect (Singing competition) (Solo)",
-        "day":  2,
-        "description":  "When there's music in your soul,there's soul in your music.Overview:•Participants are supposed to perform on the stage in front of judges andaudience.•Participants can perform solo, in a duo or as a group.•Only branch-wise duo/groups are allowed.•Maximum duration of 3 minutes to be provided for each participant.",
-        "start":  "03:00:00.160922",
-        "end":  "05:00:00.160922",
-        "max_seats":  "20",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st- 1000 2nd- 500",
-        "team_size":  "1",
-        "is_team_size_strict":"True"
-    }},
-  {
-        "model":  "events.Event",
-        "fields":{"title":  "Pitch Perfect (Singing competition) (Duo)",
-        "day":  2,
-        "description":  "When there's music in your soul,there's soul in your music.Overview:•Participants are supposed to perform on the stage in front of judges andaudience.•Participants can perform solo, in a duo or as a group.•Only branch-wise duo/groups are allowed.•Maximum duration of 3 minutes to be provided for each participant.",
-        "start":  "03:00:00.160922",
-        "end":  "05:00:00.160922",
-        "max_seats":  "8",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st- 1000 2nd- 500",
-        "team_size":  "2",
-        "is_team_size_strict":"True"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Pitch Perfect (Singing competition) (Group)",
-        "day":  2,
-        "description":  "When there's music in your soul,there's soul in your music.Overview:•Participants are supposed to perform on the stage in front of judges andaudience.•Participants can perform solo, in a duo or as a group.•Only branch-wise duo/groups are allowed.•Maximum duration of 3 minutes to be provided for each participant.",
-        "start":  "03:00:00.160922",
-        "end":  "05:00:00.160922",
-        "max_seats":  "8",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st- 1000 2nd- 500",
-        "team_size":  "4",
-        "is_team_size_strict":"True"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Shutter up (Photography contest)",
-        "day":  2,
-        "description":  "Photography is an art ofteleporting the past into the future.Overview:•The participants will have to click photos of the sports events held on first 2 days and macollage out of their best photos.•The competition will be restricted to locations/objects within the campus.•Participants have to complete the task within the allotted time.•The images/photos need to be clear and legible.•Maximum amount of photos- 4",
-        "start":  "12:00:00.160922",
-        "end":  "05:00:00.160922",
-        "max_seats":  "30",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st-700 2nd-500",
-        "team_size":  "1",
-        "is_team_size_strict":"True"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Canvas Creations (Drawing competition)",
-        "day":  1,
-        "description":  "The ability to draw dependsonone's ability to see the way an artist sees.Overview:•Theme: UDAAN•One A4 size sheet will be provided, participants must carry their own stationery (pencils,paints, etc.) and choose the form of art wisely.•The person who will be able to create the best sketch on the given theme “Udaan”, willwin the event.",
-        "start":  "01:00:00.150922",
-        "end":  "02:00:00.150922",
-        "max_seats":  "30",
-        "category":  "C",
-        "entry_fee":  "70",
-        "prize_money":  "1st-700 2nd-500",
-        "team_size":  "1",
-        "is_team_size_strict":"True"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "The Ultimate Meme Master(Meme making competition)",
-        "day":  2,
-        "description":  "Come up with your best weapons because MEME war is on.Overview:•Theme: Tragedy mein comedy•Students will have to make memes and upload on drive 24 hours before theevent.• Students will have to make memes on the given theme.•All the memes will be approved by the council then presented.•If Participant's MEME is not appropriate, they will be notified and will begiven",
-        "start":  "01:00:00.160922",
-        "end":  "02:00:00.160922",
-        "max_seats":  "40",
-        "category":  "C",
-        "entry_fee":  "50",
-        "prize_money":  "1st-500 2nd-200",
-        "team_size":  "1",
-        "is_team_size_strict":"True"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Monoacting: Drama House",
-        "day":  2,
-        "description":  "Another fun event conducted by the drama house, an acting competition which will throw light on your theatrical\ntalents.\nRULES:\nYou have to either perform a mono or duet act .\nTime limit per act is 7 minutes.\nActs will be judged on the basis of points system by the judges.\nExceeding the time limit will lead to immediate disqualification.\nAny vulgarity or obscenity will lead to disqualification.\nNo direct political reference is allowed.\nEliminations will be conducted if required prior to Etamax.",
-        "start":  "08:00:00.000000",
-        "end":  "09:00:00.000000",
-        "max_seats":  "30",
-        "category":  "C",
-        "entry_fee":  "50",
-        "prize_money":  "Prize money: 1st- 700\n2nd- 300",
-        "team_size":  "1",
-        "is_team_size_strict":"True"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Reel Mania: Manthan",
-        "day":  2,
-        "description":  "Overview:\nThe event will be announced on day 1 and the participants will get 2 day to roam the\ncollege to make their reel. They will have to present their reel on third day where they\nwill be judged on originality and creativity and clean content.",
-        "start":  "08:00:00.000000",
-        "end":  "09:00:00.000000",
-        "max_seats":  "30",
-        "category":  "C",
-        "entry_fee":  "30",
-        "prize_money":  "Prize Money: 1st - 300\n2nd- 150",
-        "team_size":  "1",
-        "is_team_size_strict":"True"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Answer in a Minute: Manthan",
-        "day":  2,
-        "description":  "Overview:\nDil Dosti Duniyadari\nThere will be 4 bonding events .\nFirst:-we can give a questions and check whether they have a similar vibe\nSecond:-one guy will lipsync a song or a phrase and the other guy wearing\nheadphones has to guess.\nThird:-try not to laugh\nFourth:- mini games with challenges\nstudents can play in group/ duo",
-        "start":  "08:00:00.000000",
-        "end":  "09:00:00.000000",
-        "max_seats":  "25",
-        "category":  "C",
-        "entry_fee":  "50",
-        "prize_money":  "Prize Money: 1st - 500\n2nd- 200",
-        "team_size":  "1",
-        "is_team_size_strict":"False"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Rang tarang. Marathi Mandal",
-        "day":  2,
-        "description":  "Rangoli competition -\n. Open for imagination\n.Colours will be provided or they can carry own colours\n. Size constraint.\nstudents can play in group/ duo",
-        "start":  "08:00:00.000000",
-        "end":  "09:00:00.000000",
-        "max_seats":  "25",
-        "category":  "C",
-        "entry_fee":  "30",
-        "prize_money":  "Prize Money: 1st - 300\n2nd- 100",
-        "team_size":  "1",
-        "is_team_size_strict":"False"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Event 2",
-        "day":  2,
-        "description":  "Event 2",
-        "start":  "08:00:00.000000",
-        "end":  "09:00:00.000000",
-        "max_seats":  "10",
-        "category":  "S",
-        "entry_fee":  "2",
-        "prize_money":  "32",
-        "team_size":  "1",
-        "is_team_size_strict":"False"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Stage Performance",
-        "day":  2,
-        "description":  "This event will be conducted by marathi mandal.\nPerformance need to be realated to Maharashtrian culture\nEg: lavani, povada, bharood, ekpartri, loknrutya, etc\nIdea of the performance needs to be given to Marathi mandal council till 12th to check the content\nMax time(each performance) : 5-7 min.",
-        "start":  "08:00:00.000000",
-        "end":  "09:00:00.000000",
-        "max_seats":  "10",
-        "category":  "S",
-        "entry_fee":  "30",
-        "prize_money":  "Prize Money: 1st - 500\n2nd- 200",   
-        "team_size":  "1",
-        "is_team_size_strict":"False"
-    }},{
-        "model":  "events.Event",
-        "fields":{"title":  "Waste out of best: Eco Club",
-        "day":  2,
-        "description":  "Rules/ description:-\n1) grp of two student from your department or solo participation is allowed\n2) participants need to bring there waste material\n3) no pre-prepared material to be brought which would led to disqualification\n4) participants are supposed to carry scissors, glue, and other required materials ",
-        "start":  "08:00:00.000000",
-        "end":  "09:00:00.000000",
-        "max_seats":  "30",
-        "category":  "C",
-        "entry_fee":  "50",
-        "prize_money":  "Prize pool of 600₹\nPrize Money: 1st - 500",
-        "team_size":  "2",
-        "is_team_size_strict":"False"
-    }}
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Pitch Perfect (Group)",
+            "description": "(Singing competition)  (Group)\r\n- When there\u0027s music in your soul,there\u0027s soul in your music.Overview:\r\n- Participants are supposed to perform on the stage in front of judges and audience.\r\n- Participants can perform solo, in a duo or as a group.\r\n- Only branch-wise duo/groups are allowed.\r\nMaximum duration of 3 minutes to be provided for each participant.",
+            "is_featured": true,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "8",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "4",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "1st- 1000 2nd- 500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "ARM WRESTLING (GIRLS)",
+            "description": "- Rules and Regulations:\r\n- Nothing shall be worn on either hand.\r\n- participants shouldn\u0027t use any foul techniques.\r\n- participants will only apply chalk on their hand\r\n- Entry per game: 50\r\n- Event Type: knockout\r\n- Duration: none\r\n- Venue : new building classroom",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "Footloose (Duo)",
+            "description": "Participants are supposed to perform on the stage in front of the judges and aud\r\n- They can participate solo and team.\r\n- Only branch- wise teams areallowed.\r\n- Maximum duration of 3 minutes to be provided to each participant.Maximum capacity of a team is 10 members.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "20",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "2",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "1st- 1000 2nd- 500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "THROWBALL (BOYS)",
+            "description": "-One of the best benefits of playing throwball is that it helps burn off calories. It also helps you\r\nmaintain a healthy weight; reduce the risk of heart diseases, diabetes and hypertension. The\r\nphysical constant movement in throwball builds the muscles of lower as well as Upper body.\r\n- Rules and Regulations:\r\n- Each team consists of twelve players with 5 active players at the time of play and 2 substitutes.\r\n- The match is played for best of 3 sets for 25 points in each set with rally score.\r\n- Entry per team: 700\r\n- Event Type: knock down\r\n- Duration: 20 mins\r\n- Venue : old lawn",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "7",
+            "is_team_size_strict": false,
+            "entry_fee": "700",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "KABADDI (GIRLS)",
+            "description": "Kabbadi is another of our very own sport which has now gained international popularity and\r\nis a great way to exhibit and test a teams reflex, teamwork and strength. It\u0027s a sport that\r\nrequires putting strength to use through strategic planning.\r\n- Rules and Regulations:\r\n- Each team shall consist of no more than 10 players with only 7 taking to the field at any one\r\ntime.\r\n- The duration of the match is two halves of 10 minutes with a half time break of 5 minutes.\r\n- The game continues in this way until the time is up, the team with the most points at the end\r\nof the match is declared the winner.\r\n- Per team: 1000/-\r\n- Event Type: knock out\r\n- Duration: 20 mins\r\n- Venue : Father Agnel Sector 10a ground",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "10",
+            "is_team_size_strict": false,
+            "entry_fee": "200",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "BEAST MODE (BOYS)",
+            "description": "One participant from each branch will come and participate in extreme physical activities.\r\n- Entry per person: 50\r\n- Event Type: knockout\r\n- Duration: 1hr\r\n- Venue : old lawn",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Best out of waste",
+            "description": "Rules/ description:-\r\n1) Group of two student from your department or solo participation is allowed\r\n2) Garticipants need to bring there waste material\r\n3) No pre-prepared material to be brought which would led to disqualification\r\n4) Participants are supposed to carry scissors, glue, and other required materials",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "30",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "2",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "Prize pool of 600?\r\nPrize Money: 1st - 500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "BOX CRICKET (GIRLS)",
+            "description": "This Cricket is our country\u0027s most popular sport and the box version of this sport is relatively\r\neasy to conduct and manage. Box cricket is a fast paced and super fun version of cricket which\r\nthe audience and players can enjoy equally.\r\n- Rules and Regulations:\r\n- Only one team is allowed from each branch\r\n- Entry fees: 500 per team\r\n- Event Type: tournament\r\n- Duration: 4 overs( initial match), 5 overs( final matches)\r\n- Venue : New parking lot",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "9",
+            "is_team_size_strict": false,
+            "entry_fee": "500",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Answer in a Minute: Manthan",
+            "description": "Overview:\r\n- Dil Dosti Duniyadari\r\n- There will be 4 bonding events .\r\n- First:-we can give a questions and check whether they have a similar vibe\r\n- Second:-one guy will lipsync a song or a phrase and the other guy wearing\r\nheadphones has to guess.\r\n- Third:-try not to laugh\r\n- Fourth:- mini games with challenges\r\nstudents can play in group/ duo",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "25",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "Prize Money: 1st - 500\r\n2nd- 200"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "ARM WRESTLING (BOYS)",
+            "description": "Rules and Regulations:\r\n- Nothing shall be worn on either hand.\r\n- participants shouldn\u0027t use any foul techniques.\r\n- participants will only apply chalk on their hand\r\n- Entry per game: 50\r\n- Event Type: knockout\r\n- Duration: none\r\n- Venue : new building classroom",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "SURON KI MEHFIL",
+            "description": "- (Band Event):- Rhythm Club\r\n- String up the lights, strike up the chords. Nothing beats a live performance. Let�s Rock this town.\r\n- Overview:\r\n- �Theme: Indo- Western Mashup\r\n- �Maximum duration of 10-15 minutes to be provided for each band.\r\n- �Participants should be wearing proper attire while performing.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "10000",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "0",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "TUG OF WAR (GIRLS)",
+            "description": "Tug of war is a popular sport with comparatively lesser requirements than other sports. It also received\r\npositive feedback from the students and is a short yet adrenaline filled sport which tests a team\u0027s strength\r\nand strategy planning abilities.\r\n- Rules and Regulations:\r\n- Branch wise competition.\r\n- Only one team per branch 10 playing (1 substitute)\r\n- Referee�s decision will be final\r\n- Entry fees: 1000 per team\r\n- Event Type: Tournament\r\n- Duration: 1 hour\r\n- Venue : Balbhavan road",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "11",
+            "is_team_size_strict": false,
+            "entry_fee": "1000",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Badminton:(Girls)",
+            "description": "-  This This game is a workout for the entire body.\r\n-  Playing this sport allows you to socialize with other people.\r\n- One of the advantages of playing badminton is that it is also good for your mental health.\r\n-  Playing this game improves your reflexes and motor coordination.\r\n- Enhancing heart health is how playing badminton benefits your physical health.\r\nRules and Regulations:\r\n-  Open entry for all.\r\n-  Men�s and Women�s separate heats 7 pointers for initial matches and 11 pointer for semi-finals and\r\nfinals.\r\n- Bring your own racket\r\n- Entry per player: 70/-\r\n- Event Type: Tournament\r\n- Duration: 10 Minutes per match\r\n- Venue: Agnels Badminton Court",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "12",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "70",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "The Ultimate Meme Master",
+            "description": "(Meme making competition)\r\n- Come up with your best weapons because MEME war is on.Overview:\r\n- Theme: Tragedy mein comedy�Students will have to make memes and upload on drive 24 hours before theevent.\r\n-  Students will have to make memes on the given theme.\r\n- All the memes will be approved by the council then presented.\r\n- If Participant\u0027s MEME is not appropriate, they will be notified and will begiven",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "40",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "50",
+            "prize_money": "1st-500 2nd-200"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "CALLIGRAPHY WORSHOP",
+            "description": "- A fun calligraphy event by Manthan.\r\n- The guest will teach the participants the dos and don�ts of calligraphy and also will provide pens and all .\r\n- Venue: Old building, Drawing room",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "40",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "100",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Basketball: -(Girls)",
+            "description": "- Basketball is also a popular sport and has similar benefits like football. \r\n- However, the plus point of basketball is it is fast based and is an inclusive sport since each player is\r\nas crucial as the first and all have to work together to win.\r\n- Rules and Regulations:\r\n- Branch wise competition.\r\n- Only one team will be allowed from a branch. 5v5 (7 Rolling Subs)",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "7",
+            "is_team_size_strict": false,
+            "entry_fee": "700",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "Acting Seminar",
+            "description": "- What are the actors instrument, the body and the voice this section of training is dedicated to step by step training to improve voice quality , diction and speech to work on accents.\r\n- A fun acting workshop conducted by the Drama house of 2022,\r\n- The guest will come and teach the participants various tricks and this for drama and theatrical acts.\r\n- Venue: New building AX-316",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "3",
+            "max_seats": "40",
+            "category": "C",
+            "is_seminar": true,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Monoacting: Drama House",
+            "description": "- Another fun event conducted by the drama house, an acting competition which will throw light on your theatrical\r\ntalents.\r\n- RULES:\r\n- You have to either perform a mono or duet act .\r\n- Time limit per act is 7 minutes.\r\n- Acts will be judged on the basis of points system by the judges.\r\n- Exceeding the time limit will lead to immediate disqualification.\r\n- Any vulgarity or obscenity will lead to disqualification.\r\n- No direct political reference is allowed.\r\n- Eliminations will be conducted if required prior to Etamax.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "30",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "50",
+            "prize_money": "Prize money: 1st- 700\r\n2nd- 300"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Basketball: -(Boys)",
+            "description": "- Basketball is also a popular sport and has similar benefits like football. \r\n- However, theplus point of basketball is it is fast based and is an inclusive sport since each player is\r\nas crucial as the first and all have to work together to win.\r\n- Rules and Regulations:\r\n- Branch wise competition.\r\n- Only one team will be allowed from a branch. 5v5 (7 Rolling Subs)",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "7",
+            "is_team_size_strict": false,
+            "entry_fee": "700",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Track and field sports:(Girls)",
+            "description": "- This includes 100m, 400m and relay races along with shotput. \r\n- Track and field sports provide an opportunity to everyone to shine and spread a sense of inclusivity.                                               \r\n- These sports promote elite fitness and discipline.\r\n- Rules and Regulations:\r\n- Entry per game: 50\r\n- Event Type: Race\r\n- Duration: 1 hour\r\n- Venue : Agnels Athletic turf",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "KHOKHO (BOYS)",
+            "description": "- One of our very sports, kho-kho is a fast-paced sport which puts to test the team\u0027s co-ordination\r\nabilities, athleticism and reflexes. The introduction to this fun yet lesser-known game would be a\r\ndrastic step to acknowledging our sport and also provide students with a different yet fun sport.\r\n- Rules and Regulations:\r\n- Each team will consist of 7 members\r\n- Branch wise competition\r\n- Entry fees:1000\r\n- Event Type: knock out\r\n- Duration: 10 mins per game\r\n- Venue : Father Agnel Sector 10a ground",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "7",
+            "is_team_size_strict": false,
+            "entry_fee": "1000",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "KABADDI (BOYS)",
+            "description": "Kabbadi is another of our very own sport which has now gained international popularity and\r\nis a great way to exhibit and test a teams reflex, teamwork and strength. It\u0027s a sport that\r\nrequires putting strength to use through strategic planning.\r\n- Rules and Regulations:\r\n- Each team shall consist of no more than 10 players with only 7 taking to the field at any one\r\ntime.\r\n- The duration of the match is two halves of 10 minutes with a half time break of 5 minutes.\r\n- The game continues in this way until the time is up, the team with the most points at the end\r\nof the match is declared the winner.\r\n- Per team: 1000/-\r\n- Event Type: knock out\r\n- Duration: 20 mins\r\n- Venue : Father Agnel Sector 10a ground",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "10",
+            "is_team_size_strict": true,
+            "entry_fee": "200",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Reel Mania: Manthan",
+            "description": "Overview:\r\n- The event will be announced on day 1 and the participants will get 2 day to roam the\r\ncollege to make their reel.\r\n- They will have to present their reel on third day where they\r\nwill be judged on originality and creativity and clean content.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "30",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "30",
+            "prize_money": "Prize Money: 1st - 300\r\n2nd- 150"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "BOX CRICKET(BOYS)",
+            "description": "This Cricket is our country\u0027s most popular sport and the box version of this sport is relatively\r\neasy to conduct and manage. Box cricket is a fast paced and super fun version of cricket which\r\nthe audience and players can enjoy equally.\r\n- Rules and Regulations:\r\n- Only one team is allowed from each branch\r\n- Entry fees: 500 per team\r\n- Event Type: tournament\r\n- Duration: 4 overs( initial match), 5 overs( final matches)\r\n- Venue : New parking loT",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "9",
+            "is_team_size_strict": false,
+            "entry_fee": "500",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "Cultural Debate",
+            "description": "- This is an opportunity to debate on the issues that draft resolutions in response to the global issues and work with others who \r\nare equally motivated and passionate about the topic of debate\r\n- The topic will be given and preparation time of 5 mins will be given there will be and elimination round of 5 mins\r\n- � No use of abusive language\r\n- � No use of mobile phones\r\n- � Judge�s decision\r\n- Venue: New Building AX- 107",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "30",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "2",
+            "is_team_size_strict": true,
+            "entry_fee": "100",
+            "prize_money": "1st- Rs 600\r\n2nd-Rs 300"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "Canvas Creations",
+            "description": "The ability to draw dependsonone\u0027s ability to see the way an artist sees.\r\n- Overview:�Theme: UDAAN\r\n- One A4 size sheet will be provided, participants must carry their own stationery (pencils,paints, etc.) and choose the form of art wisely.\r\n- The person who will be able to create the best sketch on the given theme �Udaan�, willwin the event.\r\n(Drawing competition)",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "1",
+            "max_seats": "30",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "1st-700 2nd-500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "Lights, Camera, Action",
+            "description": "- Movie Screening:\r\nGet your popcorn and cola ready cause it�s MOVIE\r\nTIME!\r\n- People will be allowed in only if they�re dressed in the particular day�s theme.\r\n- We also be having small games based on them\r\n- Day 1 is a formals day, since we all know the minions 2 movie trend, participants have to wear a formal dress from top to bottom.\r\n- Venue: New Building AX-116",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "1",
+            "max_seats": "60",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "LA CASA DE PAPEL",
+            "description": "Inspired by the famous Spanish series Money Heist.\r\n- Students will be given clues related to the -show and they have to find the final treasure.\r\n- The D-Day has arrived!\r\nOverview\r\n- �Team: 4 participants\r\n- �Groups can be formed among different branch students\r\nas well.\r\n- �Initial clues will be provided to the participants.\r\n- �Teams need to crack the given clue to find the next clue.\r\n- �All the clues will be hidden within the college campus only.\r\n- �The team to crack the last clue and find the treasure in the shortest time shall be declared as the winner.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "10",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "4",
+            "is_team_size_strict": true,
+            "entry_fee": "200",
+            "prize_money": "1st- Rs 800\r\n2nd- Rs 500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Badminton:(Duo)",
+            "description": "- This This game is a workout for the entire body.\r\n-  Playing this sport allows you to socialize with other people.\r\n- One of the advantages of playing badminton is that it is also good for your mental health.\r\n- Playing this game improves your reflexes and motor coordination.\r\n- Enhancing heart health is how playing badminton benefits your physical health.\r\n- Rules and Regulations:\r\n- Open entry for all.\r\n- Men�s and Women�s separate heats 7 pointers for initial matches and 11 pointer for semi-finals and\r\nfinals.\r\n- Bring your own racket\r\n- Entry per player: 70/-\r\n-  Event Type: Tournament\r\n-  Duration: 10 Minutes per match\r\n- Venue: Agnels Badminton Court",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "70",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Pitch Perfect",
+            "description": "(Solo)\r\nWhen there\u0027s music in your soul,there\u0027s soul in your music.\r\n- Overview:�Participants are supposed to perform on the stage in front of judges andaudience.\r\n- �Participants can perform solo, in a duo or as a group.\r\n- �Only branch-wise duo/groups are allowed.\r\n- �Maximum duration of 3 minutes to be provided for each participant.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "20",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "1st- 1000 2nd- 500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Shutter up",
+            "description": "Photography is an art ofteleporting the past into the future.\r\n- Overview:�The participants will have to click photos of the sports events held on first 2 days and macollage out of their best photos.\r\n- �The competition will be restricted to locations/objects within the campus.\r\n- �Participants have to complete the task within the allotted time.\r\n- �The images/photos need to be clear and legible.\r\n- �Maximum amount of photos- 4",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "30",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "1st-700 2nd-500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "Stranger Things",
+            "description": "- Participants will have to solve clues and get to the final riddle, this game is heavily related to the popular series stranger\r\nthings.\r\n- Rules and regulations:\r\n- Day 1 - Season 1/2\r\n- Day 2 - Season 3\r\n- Day 3 - Season 4 vol.1/vol.2\r\n- � There will be 2 rooms: Real World and Upside\r\n- � Teams have to keep minimum 2 people in real world and\r\nminimum 2 people in upside down and they can communicate\r\nonly via walkie talkie.\r\n- � One member will be tied up and the team to untie the member in the least time will be declared the winner.\r\n- � 2 teams will be shortlisted from Day 1 and Day 2, and will be playing in the face off on the third day.\r\n- Venue: Diploma Seminar hall, Fourth Floor",
+            "is_featured": true,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "9",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "5",
+            "is_team_size_strict": false,
+            "entry_fee": "300",
+            "prize_money": "1st-Rs 1200\r\n2nd-Rs 700"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "Footloose(Solo)",
+            "description": "- Participants are supposed to perform on the stage in front of the judges and audience\r\n- �They can participate solo and team.\r\n- �Only branch-wise teams are allowed.\r\n- �Maximum duration of 3 minutes to be provided to each participant.\r\n- Maximum capacity of a team is 10 members.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "8",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "1st- 1000 2nd- 500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Stage Performance",
+            "description": "- This event will be conducted by marathi mandal.\r\n- Performance need to be realated to Maharashtrian culture\r\nEg: lavani, povada, bharood, ekpartri, loknrutya, etc\r\n- Idea of the performance needs to be given to Marathi mandal council till 12th to check the content\r\n- Max time(each performance) : 5-7 min.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "10",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "30",
+            "prize_money": "Prize Money: 1st - 500\r\n2nd- 200"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "FOOTBALL (BOYS)",
+            "description": "Football is one of the most popular sport amongst youth and is a great way to build up endurance, patience and quick thinking abilities.\r\n- Football is also most sponsored sport and majority of sports brand sponsor football teams and competitions.\r\n- Rules and Regulations:-\r\n- Branch-wise competitions.\r\n1) only one team allow from a branch.\r\n2) 15 players per team (4 substitute)(11v11)\r\n3) Full ground on Agnel�s Astro Turf\r\n4) entry per team: 2000\r\n5) Event Type: Tournament (knock out)\r\n- Duration: 20 min per game\r\n- Venue: Agnels Astro Turf",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "15",
+            "is_team_size_strict": true,
+            "entry_fee": "2000",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Track and field sports: -(Boys)",
+            "description": "- This includes 100m, 400m and relay races along with shotput.\r\n- Track and field sports provide an opportunity to everyone to shine and spread a sense of inclusivity.\r\n- These sports promote elite fitness and discipline.\r\n- Rules and Regulations:\r\n- Entry per game: 50\r\n- Event Type: Race\r\n- Duration: 1 hour\r\n- Venue : Agnels Athletic turf",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "VOLLEYBALL (BOYS)",
+            "description": "Rules and Regulations:\r\n- Each team consists of 8 players with 6 active players at the time of play and 2 substitutes.\r\n- The match is played for best of 3 sets for 25 points in each set with rally score.\r\n- Entry per game: 50\r\n- Event Type: Race\r\n- Duration: 1 hour\r\n- Venue : old lawn",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "8",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "KHOKHO (GIRLS)",
+            "description": "- One of our very sports, kho-kho is a fast-paced sport which puts to test the team\u0027s co-ordination\r\nabilities, athleticism and reflexes. The introduction to this fun yet lesser-known game would be a\r\ndrastic step to acknowledging our sport and also provide students with a different yet fun sport.\r\n- Rules and Regulations:\r\n- Each team will consist of 7 members\r\n- Branch wise competition\r\n- Entry fees:1000\r\n- Event Type: knock out\r\n- Duration: 10 mins per game\r\n- Venue : Father Agnel Sector 10a ground",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "7",
+            "is_team_size_strict": true,
+            "entry_fee": "1000",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Rang tarang",
+            "description": "Rangoli competition -\r\n- . Open for imagination\r\n- .Colours will be provided or they can carry own colours\r\n- . Size constraint.\r\nstudents can play in group/ duo",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "25",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "30",
+            "prize_money": "Prize Money: 1st - 300\r\n2nd- 100"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Chess Blitz Mode: -",
+            "description": "- The blitz version of this popular indoor sport is less time consuming and is more inclined towards\r\nthe intellectual side. It\u0027s different from the traditional chess as this version is short time and this\r\nlimited time requires the player to be observant and react instinctively and quick.\r\n\r\n- Rules and Regulations\r\n\r\n- For elimination round, Blitz mode will be played where each player will have 10 mins to compete\r\n\u0026 for the Finals 30 minutes will be Given to each player.\r\n\r\n- All the participants must be present 10 minutes prior to the event.\r\n\r\n- Prize money will be given to 1st place holders.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Badminton:(BOYS)",
+            "description": "-  This This game is a workout for the entire body.\r\n- Playing this sport allows you to socialize with other people.\r\n- One of the advantages of playing badminton is that it is also good for your mental health.\r\n- Playing this game improves your reflexes and motor coordination.\r\n- Enhancing heart health is how playing badminton benefits your physical health.\r\nRules and Regulations:\r\n- Open entry for all.\r\n- Men�s and Women�s separate heats 7 pointers for initial matches and 11 pointer for semi-finals and\r\nfinals.\r\n-  Bring your own racket\r\n- Entry per player: 70/-\r\n- Event Type: Tournament\r\n- Duration: 10 Minutes per match\r\n- Venue: Agnels Badminton Court",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "70",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "Footloose(Group)",
+            "description": "- Participants are supposed to perform on the stage in front of the judges and audience\r\n- �They can participate solo and team.�Only branch-wise teams areallowed.\r\n- �Maximum duration of 3 minutes to be provided to each participant.\r\n- Maximum capacity of a team is 10 members.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "8",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "6",
+            "is_team_size_strict": false,
+            "entry_fee": "70",
+            "prize_money": "1st- 1000 2nd- 500"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "1",
+            "title": "CARROM",
+            "description": "- This is another popular indoor sport which can be played as a team as well as solo. This sport\r\nrequires high focus and precision and is a best way to show inclusivity and make the sport\r\ncompetition a light hearted and fun affair.\r\n- Rules and Regulations:\r\n- Open entry for all\r\n- No abusive language - Holding of carrom pockets is not allowed.\r\n- Use of thumb is not allowed.\r\n- Entry per player: 50\r\n- Event Type: Tournament\r\n- Venue : College Foyer\r\n- Duration: new building classroom",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": true,
+            "entry_fee": "50",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "THROWBALL (GIRLS)",
+            "description": "-One of the best benefits of playing throwball is that it helps burn off calories. It also helps you\r\nmaintain a healthy weight; reduce the risk of heart diseases, diabetes and hypertension. The\r\nphysical constant movement in throwball builds the muscles of lower as well as upper body.\r\n- Rules and Regulations:\r\n- Each team consists of twelve players with 5 active players at the time of play and 2 substitutes.\r\n- The match is played for best of 3 sets for 25 points in each set with rally score.\r\n- Entry per team: 700\r\n- Event Type: knock down\r\n- Duration: 20 mins\r\n- Venue : old lawn",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "7",
+            "is_team_size_strict": false,
+            "entry_fee": "0",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Triathlon",
+            "description": "- Triathlon is a mix of 3 short courses of different sport played by one person and it\u0027s\r\n the best way to test a person\u0027s fitness, toughness and determination. \r\n- This sport is gaining popularity amongst the youth and fitness enthusiasts and focuses on overall\r\n development.\r\n- Rules and Regulations:\r\n- Only one team will be allowed from a branch.\r\n- 3 Participants in a team.\r\n- Bring your own cycle \u0026 swimwear.\r\n- Only three students per team\r\n- Entry per person: 150\r\n- Event Type: tournament\r\n- Duration: 1 hour\r\n- Venue : agnels sport complex",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "0",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "1",
+            "is_team_size_strict": false,
+            "entry_fee": "150",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "3",
+            "title": "FOOTBALL (GIRLS)",
+            "description": "Football is one of the most popular sport amongst youth and is a great way to build\r\nup endurance, patience and quick thinking abilities. Football is also most\r\nsponsored sport and majority of sports brands sponsor football teams and\r\ncompetitions.\r\n- Rules and Regulations:\r\n- Branch wise competition.\r\n- Only one team will be allowed from a branch.\r\n- 15 players per team (4 substitute)(11v11)\r\n- Full ground on Agnel�s Astro Turf\r\n- entry per team: 2000\r\n- Event Type: Tournament (knock out)\r\n- Duration: 20 min per game\r\n- Venue: Agnels Astro Turf",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "0",
+            "max_seats": "5",
+            "category": "S",
+            "is_seminar": false,
+            "team_size": "15",
+            "is_team_size_strict": false,
+            "entry_fee": "2000",
+            "prize_money": "0"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "day": "2",
+            "title": "Pitch Perfect (Duo)",
+            "description": "When there\u0027s music in your soul,there\u0027s soul in your music.\r\n- Overview:�Participants are supposed to perform on the stage in front of judges andaudience.\r\n- �Participants can perform solo, in a duo or as a group.\r\n- �Only branch-wise duo/groups are allowed.\r\n- �Maximum duration of 3 minutes to be provided for each participant.",
+            "is_featured": false,
+            "is_fcrit_only": false,
+            "whatsapp_link": "",
+            "seats": "5",
+            "max_seats": "8",
+            "category": "C",
+            "is_seminar": false,
+            "team_size": "2",
+            "is_team_size_strict": true,
+            "entry_fee": "70",
+            "prize_money": "1st- 1000 2nd- 500"
+        }
+    }
 ]

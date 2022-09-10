@@ -134,7 +134,7 @@ export default function Home(props) {
             {/* </Box> */}
           </Center>
         </Flex>
-        {/* <DroneEvent /> */}
+        <DroneEvent />
         <FeaturedEvents events={props.events} />
         <Sponsors />
         {/* <FooterOnTopOfFooter /> */}
