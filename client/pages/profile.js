@@ -158,7 +158,7 @@ export default function Profile(props) {
                 user,
                 token: profile.token,
                 phone_no: profile.phone_no,
-                secret: "BRUH"
+                secret: process.env.OTP_SECRET
               },
             });
             }).catch(console.log);
