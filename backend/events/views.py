@@ -167,7 +167,7 @@ class EventRegiterView(APIView):
           return JsonResponse({"detail": "Roll Number is Not Valid or Doesn't Exists", "success": False}, status=400)
         
       for m in p.members.all():
-        if not m.has_filled_profile or not m.is_phone_no_verified:
+        if not m.has_filled_profile:
           print('yes view')
           print( m.has_filled_profile)
           print(m.is_phone_no_verified)

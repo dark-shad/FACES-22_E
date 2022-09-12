@@ -39,7 +39,7 @@ class User(AbstractBaseUser, PermissionsMixin):
   semester = models.SmallIntegerField(_("Semester"),blank=True, null=True)
   college = models.CharField(_("College"), max_length=256, default="FCRIT, Vashi.")
   phone_no = models.CharField(_("Phone Number"),blank=True,  max_length=32)
-  is_phone_no_verified = models.BooleanField(_("Is Phone Number Verified"), default=False)
+  is_phone_no_verified = models.BooleanField(_("Is Phone Number Verified"), default=True)
   cart = models.TextField(_("Cart JSON (DONT FILL THIS)"), default="[]")
   is_from_fcrit = models.BooleanField(_("Is From FCRIT"), default=True)
 

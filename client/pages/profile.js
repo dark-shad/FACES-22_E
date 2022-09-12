@@ -390,7 +390,7 @@ export default function Profile(props) {
                         )}
                       </InputRightElement>
                     </InputGroup>
-                    {editPhone && (
+                    {/* {editPhone && (
                       <Button bg="purple.400" onClick={login} m={2} color="white">
                         Verify OTP
                       </Button>
@@ -399,7 +399,7 @@ export default function Profile(props) {
                       id="recaptcha-container"
                       pl={3}
                       display={OTPSent && "none"}
-                    />
+                    /> */}
                   </FormControl>
                   {!phoneSet && OTPSent && (
                     <FormControl m={1}>

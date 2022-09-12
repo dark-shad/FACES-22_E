@@ -5,4 +5,4 @@ class IsProfileFilled(BasePermission):
   def has_permission(self, request, view):
     print('yes')
     print(request.user.has_filled_profile)
-    return request.user.is_phone_no_verified and request.user.has_filled_profile
+    return request.user.has_filled_profile
